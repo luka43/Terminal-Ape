@@ -133,6 +133,13 @@
   <ItemGroup>
     <Content Include="logodisabled.ico" />
     <Content Include="logoenabled.ico" />
+    <None Include="Resources\signal-verypoor.png" />
+    <None Include="Resources\signal-poor.png" />
+    <None Include="Resources\signal-good.png" />
+    <None Include="Resources\signal-fair.png" />
+    <None Include="Resources\signal-empty.png" />
+    <None Include="Resources\signal-full1.png" />
+    <None Include="Resources\signal-full.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
