@@ -113,16 +113,6 @@ namespace DegenApe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap signal_full1 {
-            get {
-                object obj = ResourceManager.GetObject("signal-full1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap signal_good {
             get {
                 object obj = ResourceManager.GetObject("signal-good", resourceCulture);
