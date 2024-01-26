@@ -214,6 +214,7 @@
             this.BoxCoinbaseAPICreateOrderUrl.Name = "BoxCoinbaseAPICreateOrderUrl";
             this.BoxCoinbaseAPICreateOrderUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxCoinbaseAPICreateOrderUrl.TabIndex = 20;
+            this.BoxCoinbaseAPICreateOrderUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label27
             // 
@@ -233,6 +234,7 @@
             this.BoxCoinbaseAPIPairlistUrl.Name = "BoxCoinbaseAPIPairlistUrl";
             this.BoxCoinbaseAPIPairlistUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxCoinbaseAPIPairlistUrl.TabIndex = 18;
+            this.BoxCoinbaseAPIPairlistUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label28
             // 
@@ -252,6 +254,7 @@
             this.BoxCoinbaseAPIPingUrl.Name = "BoxCoinbaseAPIPingUrl";
             this.BoxCoinbaseAPIPingUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxCoinbaseAPIPingUrl.TabIndex = 16;
+            this.BoxCoinbaseAPIPingUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label29
             // 
@@ -271,6 +274,7 @@
             this.BoxCoinbaseAPIBaseUrl.Name = "BoxCoinbaseAPIBaseUrl";
             this.BoxCoinbaseAPIBaseUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxCoinbaseAPIBaseUrl.TabIndex = 14;
+            this.BoxCoinbaseAPIBaseUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label30
             // 
@@ -331,6 +335,7 @@
             this.BoxBybitAPICreateOrderUrl.Name = "BoxBybitAPICreateOrderUrl";
             this.BoxBybitAPICreateOrderUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxBybitAPICreateOrderUrl.TabIndex = 20;
+            this.BoxBybitAPICreateOrderUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label26
             // 
@@ -369,6 +374,7 @@
             this.BoxBybitAPIPairlistUrl.Name = "BoxBybitAPIPairlistUrl";
             this.BoxBybitAPIPairlistUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxBybitAPIPairlistUrl.TabIndex = 18;
+            this.BoxBybitAPIPairlistUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // BoxBybitAPIBaseUrl
             // 
@@ -378,6 +384,7 @@
             this.BoxBybitAPIBaseUrl.Name = "BoxBybitAPIBaseUrl";
             this.BoxBybitAPIBaseUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxBybitAPIBaseUrl.TabIndex = 14;
+            this.BoxBybitAPIBaseUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label23
             // 
@@ -407,6 +414,7 @@
             this.BoxBybitAPIPingUrl.Name = "BoxBybitAPIPingUrl";
             this.BoxBybitAPIPingUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxBybitAPIPingUrl.TabIndex = 16;
+            this.BoxBybitAPIPingUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // panel9
             // 
@@ -448,6 +456,7 @@
             this.BoxBinanceAPICreateOrderUrl.Name = "BoxBinanceAPICreateOrderUrl";
             this.BoxBinanceAPICreateOrderUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxBinanceAPICreateOrderUrl.TabIndex = 12;
+            this.BoxBinanceAPICreateOrderUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label36
             // 
@@ -467,6 +476,7 @@
             this.BoxBinanceAPIPairlistUrl.Name = "BoxBinanceAPIPairlistUrl";
             this.BoxBinanceAPIPairlistUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxBinanceAPIPairlistUrl.TabIndex = 10;
+            this.BoxBinanceAPIPairlistUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label37
             // 
@@ -495,6 +505,7 @@
             this.BoxBinanceAPIPingUrl.Name = "BoxBinanceAPIPingUrl";
             this.BoxBinanceAPIPingUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxBinanceAPIPingUrl.TabIndex = 3;
+            this.BoxBinanceAPIPingUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label34
             // 
@@ -514,6 +525,7 @@
             this.BoxBinanceAPIBaseUrl.Name = "BoxBinanceAPIBaseUrl";
             this.BoxBinanceAPIBaseUrl.Size = new System.Drawing.Size(210, 20);
             this.BoxBinanceAPIBaseUrl.TabIndex = 1;
+            this.BoxBinanceAPIBaseUrl.TextChanged += new System.EventHandler(this.SettingChanged);
             // 
             // label35
             // 

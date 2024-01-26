@@ -80,18 +80,51 @@ namespace DegenApe
             this.Close();
         }
 
-        private void SaveSettings(object sender, EventArgs e)
+        private void SaveSettings()
         {
+            //ENDPOINTS
+            //Binance
+            MainApp.ExchangeSettings["Binance"].APIUrlBase = BoxBinanceAPIBaseUrl.Text;
+            MainApp.ExchangeSettings["Binance"].APIUrlPing = BoxBinanceAPIPingUrl.Text;
+            MainApp.ExchangeSettings["Binance"].APIUrlPairs = BoxBinanceAPIPairlistUrl.Text;
+            MainApp.ExchangeSettings["Binance"].APIUrlOrder = BoxBinanceAPICreateOrderUrl.Text;
+
+            //Bybit
+            MainApp.ExchangeSettings["Bybit"].APIUrlBase = BoxBybitAPIBaseUrl.Text;
+            MainApp.ExchangeSettings["Bybit"].APIUrlPing = BoxBybitAPIPingUrl.Text;
+            MainApp.ExchangeSettings["Bybit"].APIUrlPairs = BoxBybitAPIPairlistUrl.Text;
+            MainApp.ExchangeSettings["Bybit"].APIUrlOrder = BoxBybitAPICreateOrderUrl.Text;
+
+            //Coinbase
+            MainApp.ExchangeSettings["Coinbase"].APIUrlBase = BoxCoinbaseAPIBaseUrl.Text;
+            MainApp.ExchangeSettings["Coinbase"].APIUrlPing = BoxCoinbaseAPIPingUrl.Text;
+            MainApp.ExchangeSettings["Coinbase"].APIUrlPairs = BoxCoinbaseAPIPairlistUrl.Text;
+            MainApp.ExchangeSettings["Coinbase"].APIUrlOrder = BoxCoinbaseAPICreateOrderUrl.Text;
+
+            //KEYS
+            // Binance
             MainApp.ExchangeSettings["Binance"].APIKey = BoxBinanceAPIKey.Text;
             MainApp.ExchangeSettings["Binance"].SECRETKey = BoxBinanceSECRETKey.Text;
             MainApp.ExchangeSettings["Binance"].TIMEOUT = int.Parse(BoxBinanceTimeout.Text);
 
+            //Bybit
             MainApp.ExchangeSettings["Bybit"].APIKey = BoxBybitAPIKey.Text;
             MainApp.ExchangeSettings["Bybit"].SECRETKey = BoxBybitSECRETKey.Text;
             MainApp.ExchangeSettings["Bybit"].TIMEOUT = int.Parse(BoxBybitTimeout.Text);
 
+            //Coinbase
+            MainApp.ExchangeSettings["Coinbase"].APIKey = BoxCoinbaseAPIKey.Text;
+            MainApp.ExchangeSettings["Coinbase"].SECRETKey = BoxCoinbaseSECRETKey.Text;
+            MainApp.ExchangeSettings["Coinbase"].TIMEOUT = int.Parse(BoxCoinbaseTimeout.Text);
 
-            MainApp.Log($"Timeout changed to {BoxBinanceTimeout.Text}");
+            MainApp.AppSettings.LogAutosaveInterval = int.Parse(BoxLogAutosaveInterval.Text);
+
+            // SAVE SETTINGS
+            string jsonString = JsonConvert.SerializeObject(MainApp.AppSettings, Formatting.Indented);
+            File.WriteAllText(Path.Combine(MainApp.AppSettings.Directory, MainApp.AppSettings.SettingsFile), jsonString);
+
+            jsonString = JsonConvert.SerializeObject(MainApp.ExchangeSettings, Formatting.Indented);
+            File.WriteAllText(Path.Combine(MainApp.AppSettings.Directory, MainApp.AppSettings.ExchangeFile), jsonString);
 
             btnCancel.Text = "Close";
             btnApply.Enabled = false;
@@ -99,7 +132,6 @@ namespace DegenApe
 
         private void btnCancel_Click_1(object sender, EventArgs e)
         {
-
             this.Close();
         }
 
@@ -111,59 +143,8 @@ namespace DegenApe
 
         private void btnApply_Click(object sender, EventArgs e)
         {
-            DialogResult answer = MessageBox.Show("Are you sure you want to save modified settings?", "Apply changes", MessageBoxButtons.YesNo, MessageBoxIcon.Question); ;
-            if(answer == DialogResult.Yes)
-            {
-                //ENDPOINTS
-                //Binance
-                MainApp.ExchangeSettings["Binance"].APIUrlBase = BoxBinanceAPIBaseUrl.Text;
-                MainApp.ExchangeSettings["Binance"].APIUrlPing = BoxBinanceAPIPingUrl.Text;
-                MainApp.ExchangeSettings["Binance"].APIUrlPairs = BoxBinanceAPIPairlistUrl.Text;
-                MainApp.ExchangeSettings["Binance"].APIUrlOrder = BoxBinanceAPICreateOrderUrl.Text;
+            SaveSettings();
 
-                //Bybit
-                MainApp.ExchangeSettings["Bybit"].APIUrlBase = BoxBybitAPIBaseUrl.Text;
-                MainApp.ExchangeSettings["Bybit"].APIUrlPing = BoxBybitAPIPingUrl.Text;
-                MainApp.ExchangeSettings["Bybit"].APIUrlPairs = BoxBybitAPIPairlistUrl.Text;
-                MainApp.ExchangeSettings["Bybit"].APIUrlOrder = BoxBybitAPICreateOrderUrl.Text;
-
-                //Coinbase
-                MainApp.ExchangeSettings["Coinbase"].APIUrlBase = BoxCoinbaseAPIBaseUrl.Text;
-                MainApp.ExchangeSettings["Coinbase"].APIUrlPing = BoxCoinbaseAPIPingUrl.Text;
-                MainApp.ExchangeSettings["Coinbase"].APIUrlPairs = BoxCoinbaseAPIPairlistUrl.Text;
-                MainApp.ExchangeSettings["Coinbase"].APIUrlOrder = BoxCoinbaseAPICreateOrderUrl.Text;
-
-                //KEYS
-                // Binance
-                MainApp.ExchangeSettings["Binance"].APIKey = BoxBinanceAPIKey.Text;
-                MainApp.ExchangeSettings["Binance"].SECRETKey = BoxBinanceSECRETKey.Text;
-                MainApp.ExchangeSettings["Binance"].TIMEOUT = int.Parse(BoxBinanceTimeout.Text);
-
-                //Bybit
-                MainApp.ExchangeSettings["Bybit"].APIKey = BoxBybitAPIKey.Text;
-                MainApp.ExchangeSettings["Bybit"].SECRETKey = BoxBybitSECRETKey.Text;
-                MainApp.ExchangeSettings["Bybit"].TIMEOUT = int.Parse(BoxBybitTimeout.Text);
-
-                //Coinbase
-                MainApp.ExchangeSettings["Coinbase"].APIKey = BoxCoinbaseAPIKey.Text;
-                MainApp.ExchangeSettings["Coinbase"].SECRETKey = BoxCoinbaseSECRETKey.Text;
-                MainApp.ExchangeSettings["Coinbase"].TIMEOUT = int.Parse(BoxCoinbaseTimeout.Text);
-
-                MainApp.AppSettings.LogAutosaveInterval = int.Parse(BoxLogAutosaveInterval.Text);
-
-                // SAVE SETTINGS
-                string jsonString = JsonConvert.SerializeObject(MainApp.AppSettings, Formatting.Indented);
-                File.WriteAllText(Path.Combine(MainApp.AppSettings.Directory, MainApp.AppSettings.SettingsFile), jsonString);
-
-                jsonString = JsonConvert.SerializeObject(MainApp.ExchangeSettings, Formatting.Indented);
-                File.WriteAllText(Path.Combine(MainApp.AppSettings.Directory, MainApp.AppSettings.ExchangeFile), jsonString);
-
-                this.Close();
-            }
-            else
-            {
-
-            }
         }
 
 
