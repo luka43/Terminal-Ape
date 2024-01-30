@@ -33,6 +33,7 @@
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainAppForm));
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
             loadDatabaseToolStripMenuItem = new ToolStripMenuItem();
@@ -516,6 +517,7 @@
             // ImageSignalStatus
             // 
             ImageSignalStatus.Dock = DockStyle.Right;
+            ImageSignalStatus.Image = Properties.Resources.signal_empty;
             ImageSignalStatus.ImageAlign = ContentAlignment.MiddleRight;
             ImageSignalStatus.Location = new Point(1721, 3);
             ImageSignalStatus.Margin = new Padding(3);
@@ -1498,6 +1500,7 @@
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Top;
+            pictureBox1.Image = Properties.Resources.apedisabledsmall;
             pictureBox1.Location = new Point(5, 14);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
@@ -3278,6 +3281,7 @@
             Controls.Add(menuStrip1);
             Font = new Font("Verdana", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
             MinimumSize = new Size(1833, 39);
