@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
@@ -60,7 +61,7 @@
             Statusbar = new Panel();
             PanelBottom = new Panel();
             panelConsole = new Panel();
-            groupBox5 = new GroupBox();
+            groupBoxConsole = new GroupBox();
             logBox = new RichTextBox();
             MainAppPanel = new Panel();
             panel6 = new Panel();
@@ -142,20 +143,20 @@
             panel11 = new Panel();
             groupBox9 = new GroupBox();
             panel36 = new Panel();
-            LabelCoinbaseDatabaseHaltedQuotes = new Label();
+            coinbaseOldCacheHaltedQuotes = new Label();
             label58 = new Label();
-            LabelCoinbaseDatabaseHaltedBases = new Label();
+            coinbaseOldCacheHaltedBases = new Label();
             label62 = new Label();
-            LabelCoinbaseHaltedPairs = new Label();
+            coinbaseOldCacheHaltedPairs = new Label();
             label65 = new Label();
             panel35 = new Panel();
-            LabelCoinbaseDatabaseTradingQuotes = new Label();
+            coinbaseOldCacheTradingQuotes = new Label();
             label57 = new Label();
-            LabelCoinbaseDatabaseTradingBases = new Label();
+            coinbaseOldCacheTradingBases = new Label();
             label59 = new Label();
-            LabelCoinbaseAllPairs = new Label();
+            coinbaseOldCacheAllPairs = new Label();
             label61 = new Label();
-            LabelCoinbaseTradingPairs = new Label();
+            coinbaseOldCacheTradingPairs = new Label();
             label63 = new Label();
             panel34 = new Panel();
             label54 = new Label();
@@ -169,43 +170,43 @@
             DropdownCoinbaseNewpairs = new ComboBox();
             label48 = new Label();
             panel31 = new Panel();
-            LabelCoinbaseExchangeHaltedQuotes = new Label();
+            coinbaseNewCacheHaltedQuotes = new Label();
             label42 = new Label();
-            LabeCoinbaseExchangeHaltedBases = new Label();
+            coinbaseNewCacheHaltedBases = new Label();
             label50 = new Label();
-            LabelCoinbaseExchangeNewPairs = new Label();
+            coinbaseNewPairs = new Label();
             label53 = new Label();
-            LabelCoinbaseExchangeHaltedPairs = new Label();
+            coinbaseNewCacheHaltedPairs = new Label();
             label55 = new Label();
             panel30 = new Panel();
-            LabelCoinbaseExchangeTradingQuotes = new Label();
+            coinbaseNewCacheTradingQuotes = new Label();
             label41 = new Label();
-            LabelCoinbaseExchangeTradingBases = new Label();
+            coinbaseNewCacheTradingBases = new Label();
             label47 = new Label();
-            LabelCoinbaseExchangeAllPairs = new Label();
+            coinbaseNewCacheAllPairs = new Label();
             label49 = new Label();
-            LabelCoinbaseExchangeTradingPairs = new Label();
+            coinbaseNewCacheTradingPairs = new Label();
             label51 = new Label();
             panel29 = new Panel();
-            LabelCoinbaseExchangeStatus = new Label();
+            LabelcoinbaseExchangeStatus = new Label();
             label39 = new Label();
             panel10 = new Panel();
             groupBox10 = new GroupBox();
             panel28 = new Panel();
-            LabelBybitDatabaseHaltedQuotes = new Label();
+            bybitOldCacheHaltedQuotes = new Label();
             label15 = new Label();
-            LabelBybitDatabaseHaltedBases = new Label();
+            bybitOldCacheHaltedBases = new Label();
             label17 = new Label();
-            LabelBybitDatabaseHaltedPairs = new Label();
+            bybitOldCacheHaltedPairs = new Label();
             label22 = new Label();
             panel27 = new Panel();
-            LabelBybitDatabaseTradingQuotes = new Label();
+            bybitOldCacheTradingQuotes = new Label();
             label16 = new Label();
-            LabelBybitDatabaseTradingBases = new Label();
+            bybitOldCacheTradingBases = new Label();
             label18 = new Label();
-            LabelBybitDatabaseAllPairs = new Label();
+            bybitOldCacheAllPairs = new Label();
             label21 = new Label();
-            LabelBybitDatabaseTradingPairs = new Label();
+            bybitOldCacheTradingPairs = new Label();
             label23 = new Label();
             panel26 = new Panel();
             label31 = new Label();
@@ -219,43 +220,43 @@
             DropdownBybitNewpairs = new ComboBox();
             label38 = new Label();
             panel23 = new Panel();
-            LabelBybitExchangeHaltedQuotes = new Label();
+            bybitNewCacheHaltedQuotes = new Label();
             label24 = new Label();
-            LabeBybitExchangeHaltedBases = new Label();
+            bybitNewCacheHaltedBases = new Label();
             label27 = new Label();
-            LabelBybitExchangeNewPairs = new Label();
+            bybitNewPairs = new Label();
             label33 = new Label();
-            LabelBybitExchangeHaltedPairs = new Label();
+            bybitNewCacheHaltedPairs = new Label();
             label35 = new Label();
             panel22 = new Panel();
-            LabelBybitExchangeTradingQuotes = new Label();
+            bybitNewCacheTradingQuotes = new Label();
             label26 = new Label();
-            LabelBybitExchangeTradingBases = new Label();
+            bybitNewCacheTradingBases = new Label();
             label29 = new Label();
-            LabelBybitExchangeAllPairs = new Label();
+            bybitNewCacheAllPairs = new Label();
             label34 = new Label();
-            LabelBybitExchangeTradingPairs = new Label();
+            bybitNewCacheTradingPairs = new Label();
             label3 = new Label();
             panel21 = new Panel();
-            LabelBybitExchangeStatus = new Label();
+            LabelbybitExchangeStatus = new Label();
             label43 = new Label();
             panel7 = new Panel();
             groupBox8 = new GroupBox();
             panel20 = new Panel();
-            LabelBinanceDatabaseHaltedQuotes = new Label();
+            binanceOldCacheHaltedQuotes = new Label();
             label25 = new Label();
-            LabelBinanceDatabaseHaltedBases = new Label();
+            binanceOldCacheHaltedBases = new Label();
             label19 = new Label();
-            LabelBinanceDatabaseHaltedPairs = new Label();
+            binanceOldCacheHaltedPairs = new Label();
             label2 = new Label();
             panel19 = new Panel();
-            LabelBinanceDatabaseTradingQuotes = new Label();
+            binanceOldCacheTradingQuotes = new Label();
             label28 = new Label();
-            LabelBinanceDatabaseTradingBases = new Label();
+            binanceOldCacheTradingBases = new Label();
             label20 = new Label();
-            LabelBinanceDatabaseAllPairs = new Label();
+            binanceOldCacheAllPairs = new Label();
             label14 = new Label();
-            LabelBinanceDatabaseTradingPairs = new Label();
+            binanceOldCacheTradingPairs = new Label();
             label9 = new Label();
             panel18 = new Panel();
             label13 = new Label();
@@ -269,32 +270,33 @@
             DropdownBinanceNewpairs = new ComboBox();
             LabelNewPairBinance = new Label();
             panel15 = new Panel();
-            LabelBinanceExchangeHaltedQuotes = new Label();
+            binanceNewCacheHaltedQuotes = new Label();
             label44 = new Label();
-            LabelBinanceExchangeHaltedBases = new Label();
+            binanceNewCacheHaltedBases = new Label();
             label6 = new Label();
-            LabelBinanceExchangeNewPairs = new Label();
+            binanceNewPairs = new Label();
             label10 = new Label();
-            LabelBinanceExchangeHaltedPairs = new Label();
+            binanceNewCacheHaltedPairs = new Label();
             label5 = new Label();
             panel14 = new Panel();
-            LabelBinanceExchangeTradingQuotes = new Label();
+            binanceNewCacheTradingQuotes = new Label();
             label45 = new Label();
-            LabelBinanceExchangeTradingBases = new Label();
+            binanceNewCacheTradingBases = new Label();
             label7 = new Label();
-            LabelBinanceExchangeAllPairs = new Label();
+            binanceNewCacheAllPairs = new Label();
             label11 = new Label();
-            LabelBinanceExchangeTradingPairs = new Label();
+            binanceNewCacheTradingPairs = new Label();
             label4 = new Label();
             panel13 = new Panel();
-            LabelBinanceExchangeStatus = new Label();
+            LabelbinanceExchangeStatus = new Label();
             label1 = new Label();
+            _connectionCheck = new System.Windows.Forms.Timer(components);
             menuStrip1.SuspendLayout();
             panel12.SuspendLayout();
             Statusbar.SuspendLayout();
             PanelBottom.SuspendLayout();
             panelConsole.SuspendLayout();
-            groupBox5.SuspendLayout();
+            groupBoxConsole.SuspendLayout();
             MainAppPanel.SuspendLayout();
             panel6.SuspendLayout();
             PanelOrderCreate.SuspendLayout();
@@ -553,7 +555,7 @@
             // 
             // panelConsole
             // 
-            panelConsole.Controls.Add(groupBox5);
+            panelConsole.Controls.Add(groupBoxConsole);
             panelConsole.Dock = DockStyle.Fill;
             panelConsole.Location = new Point(10, 0);
             panelConsole.Margin = new Padding(4, 3, 4, 3);
@@ -562,19 +564,19 @@
             panelConsole.Size = new Size(1797, 255);
             panelConsole.TabIndex = 205;
             // 
-            // groupBox5
+            // groupBoxConsole
             // 
-            groupBox5.Controls.Add(logBox);
-            groupBox5.Dock = DockStyle.Fill;
-            groupBox5.Location = new Point(6, 5);
-            groupBox5.Margin = new Padding(4, 3, 4, 3);
-            groupBox5.MinimumSize = new Size(0, 200);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Padding = new Padding(12, 10, 12, 10);
-            groupBox5.Size = new Size(1785, 245);
-            groupBox5.TabIndex = 11;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "Console:";
+            groupBoxConsole.Controls.Add(logBox);
+            groupBoxConsole.Dock = DockStyle.Fill;
+            groupBoxConsole.Location = new Point(6, 5);
+            groupBoxConsole.Margin = new Padding(4, 3, 4, 3);
+            groupBoxConsole.MinimumSize = new Size(0, 200);
+            groupBoxConsole.Name = "groupBoxConsole";
+            groupBoxConsole.Padding = new Padding(12, 10, 12, 10);
+            groupBoxConsole.Size = new Size(1785, 245);
+            groupBoxConsole.TabIndex = 11;
+            groupBoxConsole.TabStop = false;
+            groupBoxConsole.Text = "Console:";
             // 
             // logBox
             // 
@@ -1539,11 +1541,11 @@
             // 
             // panel36
             // 
-            panel36.Controls.Add(LabelCoinbaseDatabaseHaltedQuotes);
+            panel36.Controls.Add(coinbaseOldCacheHaltedQuotes);
             panel36.Controls.Add(label58);
-            panel36.Controls.Add(LabelCoinbaseDatabaseHaltedBases);
+            panel36.Controls.Add(coinbaseOldCacheHaltedBases);
             panel36.Controls.Add(label62);
-            panel36.Controls.Add(LabelCoinbaseHaltedPairs);
+            panel36.Controls.Add(coinbaseOldCacheHaltedPairs);
             panel36.Controls.Add(label65);
             panel36.Dock = DockStyle.Top;
             panel36.Location = new Point(3, 164);
@@ -1552,18 +1554,18 @@
             panel36.Size = new Size(514, 20);
             panel36.TabIndex = 149;
             // 
-            // LabelCoinbaseDatabaseHaltedQuotes
+            // coinbaseOldCacheHaltedQuotes
             // 
-            LabelCoinbaseDatabaseHaltedQuotes.Dock = DockStyle.Left;
-            LabelCoinbaseDatabaseHaltedQuotes.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseDatabaseHaltedQuotes.Location = new Point(477, 3);
-            LabelCoinbaseDatabaseHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseDatabaseHaltedQuotes.Name = "LabelCoinbaseDatabaseHaltedQuotes";
-            LabelCoinbaseDatabaseHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseDatabaseHaltedQuotes.Size = new Size(38, 14);
-            LabelCoinbaseDatabaseHaltedQuotes.TabIndex = 173;
-            LabelCoinbaseDatabaseHaltedQuotes.Text = "0";
-            LabelCoinbaseDatabaseHaltedQuotes.TextAlign = ContentAlignment.TopRight;
+            coinbaseOldCacheHaltedQuotes.Dock = DockStyle.Left;
+            coinbaseOldCacheHaltedQuotes.ForeColor = SystemColors.ControlText;
+            coinbaseOldCacheHaltedQuotes.Location = new Point(477, 3);
+            coinbaseOldCacheHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
+            coinbaseOldCacheHaltedQuotes.Name = "coinbaseOldCacheHaltedQuotes";
+            coinbaseOldCacheHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
+            coinbaseOldCacheHaltedQuotes.Size = new Size(38, 14);
+            coinbaseOldCacheHaltedQuotes.TabIndex = 173;
+            coinbaseOldCacheHaltedQuotes.Text = "0";
+            coinbaseOldCacheHaltedQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label58
             // 
@@ -1574,18 +1576,18 @@
             label58.TabIndex = 172;
             label58.Text = "Halted Quotes:";
             // 
-            // LabelCoinbaseDatabaseHaltedBases
+            // coinbaseOldCacheHaltedBases
             // 
-            LabelCoinbaseDatabaseHaltedBases.Dock = DockStyle.Left;
-            LabelCoinbaseDatabaseHaltedBases.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseDatabaseHaltedBases.Location = new Point(341, 3);
-            LabelCoinbaseDatabaseHaltedBases.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseDatabaseHaltedBases.Name = "LabelCoinbaseDatabaseHaltedBases";
-            LabelCoinbaseDatabaseHaltedBases.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseDatabaseHaltedBases.Size = new Size(38, 14);
-            LabelCoinbaseDatabaseHaltedBases.TabIndex = 171;
-            LabelCoinbaseDatabaseHaltedBases.Text = "0";
-            LabelCoinbaseDatabaseHaltedBases.TextAlign = ContentAlignment.TopRight;
+            coinbaseOldCacheHaltedBases.Dock = DockStyle.Left;
+            coinbaseOldCacheHaltedBases.ForeColor = SystemColors.ControlText;
+            coinbaseOldCacheHaltedBases.Location = new Point(341, 3);
+            coinbaseOldCacheHaltedBases.Margin = new Padding(4, 0, 4, 0);
+            coinbaseOldCacheHaltedBases.Name = "coinbaseOldCacheHaltedBases";
+            coinbaseOldCacheHaltedBases.Padding = new Padding(0, 0, 3, 0);
+            coinbaseOldCacheHaltedBases.Size = new Size(38, 14);
+            coinbaseOldCacheHaltedBases.TabIndex = 171;
+            coinbaseOldCacheHaltedBases.Text = "0";
+            coinbaseOldCacheHaltedBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label62
             // 
@@ -1597,17 +1599,17 @@
             label62.TabIndex = 170;
             label62.Text = "Halted Symbols:";
             // 
-            // LabelCoinbaseHaltedPairs
+            // coinbaseOldCacheHaltedPairs
             // 
-            LabelCoinbaseHaltedPairs.Dock = DockStyle.Left;
-            LabelCoinbaseHaltedPairs.Location = new Point(89, 3);
-            LabelCoinbaseHaltedPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseHaltedPairs.Name = "LabelCoinbaseHaltedPairs";
-            LabelCoinbaseHaltedPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseHaltedPairs.Size = new Size(38, 14);
-            LabelCoinbaseHaltedPairs.TabIndex = 169;
-            LabelCoinbaseHaltedPairs.Text = "0";
-            LabelCoinbaseHaltedPairs.TextAlign = ContentAlignment.TopRight;
+            coinbaseOldCacheHaltedPairs.Dock = DockStyle.Left;
+            coinbaseOldCacheHaltedPairs.Location = new Point(89, 3);
+            coinbaseOldCacheHaltedPairs.Margin = new Padding(4, 0, 4, 0);
+            coinbaseOldCacheHaltedPairs.Name = "coinbaseOldCacheHaltedPairs";
+            coinbaseOldCacheHaltedPairs.Padding = new Padding(0, 0, 3, 0);
+            coinbaseOldCacheHaltedPairs.Size = new Size(38, 14);
+            coinbaseOldCacheHaltedPairs.TabIndex = 169;
+            coinbaseOldCacheHaltedPairs.Text = "0";
+            coinbaseOldCacheHaltedPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label65
             // 
@@ -1620,13 +1622,13 @@
             // 
             // panel35
             // 
-            panel35.Controls.Add(LabelCoinbaseDatabaseTradingQuotes);
+            panel35.Controls.Add(coinbaseOldCacheTradingQuotes);
             panel35.Controls.Add(label57);
-            panel35.Controls.Add(LabelCoinbaseDatabaseTradingBases);
+            panel35.Controls.Add(coinbaseOldCacheTradingBases);
             panel35.Controls.Add(label59);
-            panel35.Controls.Add(LabelCoinbaseAllPairs);
+            panel35.Controls.Add(coinbaseOldCacheAllPairs);
             panel35.Controls.Add(label61);
-            panel35.Controls.Add(LabelCoinbaseTradingPairs);
+            panel35.Controls.Add(coinbaseOldCacheTradingPairs);
             panel35.Controls.Add(label63);
             panel35.Dock = DockStyle.Top;
             panel35.Location = new Point(3, 144);
@@ -1635,18 +1637,18 @@
             panel35.Size = new Size(514, 20);
             panel35.TabIndex = 148;
             // 
-            // LabelCoinbaseDatabaseTradingQuotes
+            // coinbaseOldCacheTradingQuotes
             // 
-            LabelCoinbaseDatabaseTradingQuotes.Dock = DockStyle.Left;
-            LabelCoinbaseDatabaseTradingQuotes.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseDatabaseTradingQuotes.Location = new Point(477, 3);
-            LabelCoinbaseDatabaseTradingQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseDatabaseTradingQuotes.Name = "LabelCoinbaseDatabaseTradingQuotes";
-            LabelCoinbaseDatabaseTradingQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseDatabaseTradingQuotes.Size = new Size(38, 14);
-            LabelCoinbaseDatabaseTradingQuotes.TabIndex = 159;
-            LabelCoinbaseDatabaseTradingQuotes.Text = "0";
-            LabelCoinbaseDatabaseTradingQuotes.TextAlign = ContentAlignment.TopRight;
+            coinbaseOldCacheTradingQuotes.Dock = DockStyle.Left;
+            coinbaseOldCacheTradingQuotes.ForeColor = SystemColors.ControlText;
+            coinbaseOldCacheTradingQuotes.Location = new Point(477, 3);
+            coinbaseOldCacheTradingQuotes.Margin = new Padding(4, 0, 4, 0);
+            coinbaseOldCacheTradingQuotes.Name = "coinbaseOldCacheTradingQuotes";
+            coinbaseOldCacheTradingQuotes.Padding = new Padding(0, 0, 3, 0);
+            coinbaseOldCacheTradingQuotes.Size = new Size(38, 14);
+            coinbaseOldCacheTradingQuotes.TabIndex = 159;
+            coinbaseOldCacheTradingQuotes.Text = "0";
+            coinbaseOldCacheTradingQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label57
             // 
@@ -1657,18 +1659,18 @@
             label57.TabIndex = 158;
             label57.Text = "Trading Quotes:";
             // 
-            // LabelCoinbaseDatabaseTradingBases
+            // coinbaseOldCacheTradingBases
             // 
-            LabelCoinbaseDatabaseTradingBases.Dock = DockStyle.Left;
-            LabelCoinbaseDatabaseTradingBases.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseDatabaseTradingBases.Location = new Point(341, 3);
-            LabelCoinbaseDatabaseTradingBases.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseDatabaseTradingBases.Name = "LabelCoinbaseDatabaseTradingBases";
-            LabelCoinbaseDatabaseTradingBases.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseDatabaseTradingBases.Size = new Size(38, 14);
-            LabelCoinbaseDatabaseTradingBases.TabIndex = 157;
-            LabelCoinbaseDatabaseTradingBases.Text = "0";
-            LabelCoinbaseDatabaseTradingBases.TextAlign = ContentAlignment.TopRight;
+            coinbaseOldCacheTradingBases.Dock = DockStyle.Left;
+            coinbaseOldCacheTradingBases.ForeColor = SystemColors.ControlText;
+            coinbaseOldCacheTradingBases.Location = new Point(341, 3);
+            coinbaseOldCacheTradingBases.Margin = new Padding(4, 0, 4, 0);
+            coinbaseOldCacheTradingBases.Name = "coinbaseOldCacheTradingBases";
+            coinbaseOldCacheTradingBases.Padding = new Padding(0, 0, 3, 0);
+            coinbaseOldCacheTradingBases.Size = new Size(38, 14);
+            coinbaseOldCacheTradingBases.TabIndex = 157;
+            coinbaseOldCacheTradingBases.Text = "0";
+            coinbaseOldCacheTradingBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label59
             // 
@@ -1679,17 +1681,17 @@
             label59.TabIndex = 156;
             label59.Text = "Trading Symbols:";
             // 
-            // LabelCoinbaseAllPairs
+            // coinbaseOldCacheAllPairs
             // 
-            LabelCoinbaseAllPairs.Dock = DockStyle.Left;
-            LabelCoinbaseAllPairs.Location = new Point(195, 3);
-            LabelCoinbaseAllPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseAllPairs.Name = "LabelCoinbaseAllPairs";
-            LabelCoinbaseAllPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseAllPairs.Size = new Size(38, 14);
-            LabelCoinbaseAllPairs.TabIndex = 155;
-            LabelCoinbaseAllPairs.Text = "0";
-            LabelCoinbaseAllPairs.TextAlign = ContentAlignment.TopRight;
+            coinbaseOldCacheAllPairs.Dock = DockStyle.Left;
+            coinbaseOldCacheAllPairs.Location = new Point(195, 3);
+            coinbaseOldCacheAllPairs.Margin = new Padding(4, 0, 4, 0);
+            coinbaseOldCacheAllPairs.Name = "coinbaseOldCacheAllPairs";
+            coinbaseOldCacheAllPairs.Padding = new Padding(0, 0, 3, 0);
+            coinbaseOldCacheAllPairs.Size = new Size(38, 14);
+            coinbaseOldCacheAllPairs.TabIndex = 155;
+            coinbaseOldCacheAllPairs.Text = "0";
+            coinbaseOldCacheAllPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label61
             // 
@@ -1700,17 +1702,17 @@
             label61.TabIndex = 154;
             label61.Text = "All pairs:";
             // 
-            // LabelCoinbaseTradingPairs
+            // coinbaseOldCacheTradingPairs
             // 
-            LabelCoinbaseTradingPairs.Dock = DockStyle.Left;
-            LabelCoinbaseTradingPairs.Location = new Point(89, 3);
-            LabelCoinbaseTradingPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseTradingPairs.Name = "LabelCoinbaseTradingPairs";
-            LabelCoinbaseTradingPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseTradingPairs.Size = new Size(38, 14);
-            LabelCoinbaseTradingPairs.TabIndex = 153;
-            LabelCoinbaseTradingPairs.Text = "0";
-            LabelCoinbaseTradingPairs.TextAlign = ContentAlignment.TopRight;
+            coinbaseOldCacheTradingPairs.Dock = DockStyle.Left;
+            coinbaseOldCacheTradingPairs.Location = new Point(89, 3);
+            coinbaseOldCacheTradingPairs.Margin = new Padding(4, 0, 4, 0);
+            coinbaseOldCacheTradingPairs.Name = "coinbaseOldCacheTradingPairs";
+            coinbaseOldCacheTradingPairs.Padding = new Padding(0, 0, 3, 0);
+            coinbaseOldCacheTradingPairs.Size = new Size(38, 14);
+            coinbaseOldCacheTradingPairs.TabIndex = 153;
+            coinbaseOldCacheTradingPairs.Text = "0";
+            coinbaseOldCacheTradingPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label63
             // 
@@ -1853,13 +1855,13 @@
             // 
             // panel31
             // 
-            panel31.Controls.Add(LabelCoinbaseExchangeHaltedQuotes);
+            panel31.Controls.Add(coinbaseNewCacheHaltedQuotes);
             panel31.Controls.Add(label42);
-            panel31.Controls.Add(LabeCoinbaseExchangeHaltedBases);
+            panel31.Controls.Add(coinbaseNewCacheHaltedBases);
             panel31.Controls.Add(label50);
-            panel31.Controls.Add(LabelCoinbaseExchangeNewPairs);
+            panel31.Controls.Add(coinbaseNewPairs);
             panel31.Controls.Add(label53);
-            panel31.Controls.Add(LabelCoinbaseExchangeHaltedPairs);
+            panel31.Controls.Add(coinbaseNewCacheHaltedPairs);
             panel31.Controls.Add(label55);
             panel31.Dock = DockStyle.Top;
             panel31.Location = new Point(3, 57);
@@ -1868,18 +1870,18 @@
             panel31.Size = new Size(514, 20);
             panel31.TabIndex = 144;
             // 
-            // LabelCoinbaseExchangeHaltedQuotes
+            // coinbaseNewCacheHaltedQuotes
             // 
-            LabelCoinbaseExchangeHaltedQuotes.Dock = DockStyle.Left;
-            LabelCoinbaseExchangeHaltedQuotes.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseExchangeHaltedQuotes.Location = new Point(477, 3);
-            LabelCoinbaseExchangeHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseExchangeHaltedQuotes.Name = "LabelCoinbaseExchangeHaltedQuotes";
-            LabelCoinbaseExchangeHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseExchangeHaltedQuotes.Size = new Size(38, 14);
-            LabelCoinbaseExchangeHaltedQuotes.TabIndex = 153;
-            LabelCoinbaseExchangeHaltedQuotes.Text = "0";
-            LabelCoinbaseExchangeHaltedQuotes.TextAlign = ContentAlignment.TopRight;
+            coinbaseNewCacheHaltedQuotes.Dock = DockStyle.Left;
+            coinbaseNewCacheHaltedQuotes.ForeColor = SystemColors.ControlText;
+            coinbaseNewCacheHaltedQuotes.Location = new Point(477, 3);
+            coinbaseNewCacheHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
+            coinbaseNewCacheHaltedQuotes.Name = "coinbaseNewCacheHaltedQuotes";
+            coinbaseNewCacheHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
+            coinbaseNewCacheHaltedQuotes.Size = new Size(38, 14);
+            coinbaseNewCacheHaltedQuotes.TabIndex = 153;
+            coinbaseNewCacheHaltedQuotes.Text = "0";
+            coinbaseNewCacheHaltedQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label42
             // 
@@ -1890,18 +1892,18 @@
             label42.TabIndex = 152;
             label42.Text = "Halted Quotes:";
             // 
-            // LabeCoinbaseExchangeHaltedBases
+            // coinbaseNewCacheHaltedBases
             // 
-            LabeCoinbaseExchangeHaltedBases.Dock = DockStyle.Left;
-            LabeCoinbaseExchangeHaltedBases.ForeColor = SystemColors.ControlText;
-            LabeCoinbaseExchangeHaltedBases.Location = new Point(341, 3);
-            LabeCoinbaseExchangeHaltedBases.Margin = new Padding(4, 0, 4, 0);
-            LabeCoinbaseExchangeHaltedBases.Name = "LabeCoinbaseExchangeHaltedBases";
-            LabeCoinbaseExchangeHaltedBases.Padding = new Padding(0, 0, 3, 0);
-            LabeCoinbaseExchangeHaltedBases.Size = new Size(38, 14);
-            LabeCoinbaseExchangeHaltedBases.TabIndex = 151;
-            LabeCoinbaseExchangeHaltedBases.Text = "0";
-            LabeCoinbaseExchangeHaltedBases.TextAlign = ContentAlignment.TopRight;
+            coinbaseNewCacheHaltedBases.Dock = DockStyle.Left;
+            coinbaseNewCacheHaltedBases.ForeColor = SystemColors.ControlText;
+            coinbaseNewCacheHaltedBases.Location = new Point(341, 3);
+            coinbaseNewCacheHaltedBases.Margin = new Padding(4, 0, 4, 0);
+            coinbaseNewCacheHaltedBases.Name = "coinbaseNewCacheHaltedBases";
+            coinbaseNewCacheHaltedBases.Padding = new Padding(0, 0, 3, 0);
+            coinbaseNewCacheHaltedBases.Size = new Size(38, 14);
+            coinbaseNewCacheHaltedBases.TabIndex = 151;
+            coinbaseNewCacheHaltedBases.Text = "0";
+            coinbaseNewCacheHaltedBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label50
             // 
@@ -1912,18 +1914,18 @@
             label50.TabIndex = 150;
             label50.Text = "Halted Symbols:";
             // 
-            // LabelCoinbaseExchangeNewPairs
+            // coinbaseNewPairs
             // 
-            LabelCoinbaseExchangeNewPairs.Dock = DockStyle.Left;
-            LabelCoinbaseExchangeNewPairs.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseExchangeNewPairs.Location = new Point(195, 3);
-            LabelCoinbaseExchangeNewPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseExchangeNewPairs.Name = "LabelCoinbaseExchangeNewPairs";
-            LabelCoinbaseExchangeNewPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseExchangeNewPairs.Size = new Size(38, 14);
-            LabelCoinbaseExchangeNewPairs.TabIndex = 149;
-            LabelCoinbaseExchangeNewPairs.Text = "0";
-            LabelCoinbaseExchangeNewPairs.TextAlign = ContentAlignment.TopRight;
+            coinbaseNewPairs.Dock = DockStyle.Left;
+            coinbaseNewPairs.ForeColor = SystemColors.ControlText;
+            coinbaseNewPairs.Location = new Point(195, 3);
+            coinbaseNewPairs.Margin = new Padding(4, 0, 4, 0);
+            coinbaseNewPairs.Name = "coinbaseNewPairs";
+            coinbaseNewPairs.Padding = new Padding(0, 0, 3, 0);
+            coinbaseNewPairs.Size = new Size(38, 14);
+            coinbaseNewPairs.TabIndex = 149;
+            coinbaseNewPairs.Text = "0";
+            coinbaseNewPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label53
             // 
@@ -1934,18 +1936,18 @@
             label53.TabIndex = 148;
             label53.Text = "New pairs:";
             // 
-            // LabelCoinbaseExchangeHaltedPairs
+            // coinbaseNewCacheHaltedPairs
             // 
-            LabelCoinbaseExchangeHaltedPairs.Dock = DockStyle.Left;
-            LabelCoinbaseExchangeHaltedPairs.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseExchangeHaltedPairs.Location = new Point(89, 3);
-            LabelCoinbaseExchangeHaltedPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseExchangeHaltedPairs.Name = "LabelCoinbaseExchangeHaltedPairs";
-            LabelCoinbaseExchangeHaltedPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseExchangeHaltedPairs.Size = new Size(38, 14);
-            LabelCoinbaseExchangeHaltedPairs.TabIndex = 147;
-            LabelCoinbaseExchangeHaltedPairs.Text = "0";
-            LabelCoinbaseExchangeHaltedPairs.TextAlign = ContentAlignment.TopRight;
+            coinbaseNewCacheHaltedPairs.Dock = DockStyle.Left;
+            coinbaseNewCacheHaltedPairs.ForeColor = SystemColors.ControlText;
+            coinbaseNewCacheHaltedPairs.Location = new Point(89, 3);
+            coinbaseNewCacheHaltedPairs.Margin = new Padding(4, 0, 4, 0);
+            coinbaseNewCacheHaltedPairs.Name = "coinbaseNewCacheHaltedPairs";
+            coinbaseNewCacheHaltedPairs.Padding = new Padding(0, 0, 3, 0);
+            coinbaseNewCacheHaltedPairs.Size = new Size(38, 14);
+            coinbaseNewCacheHaltedPairs.TabIndex = 147;
+            coinbaseNewCacheHaltedPairs.Text = "0";
+            coinbaseNewCacheHaltedPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label55
             // 
@@ -1958,13 +1960,13 @@
             // 
             // panel30
             // 
-            panel30.Controls.Add(LabelCoinbaseExchangeTradingQuotes);
+            panel30.Controls.Add(coinbaseNewCacheTradingQuotes);
             panel30.Controls.Add(label41);
-            panel30.Controls.Add(LabelCoinbaseExchangeTradingBases);
+            panel30.Controls.Add(coinbaseNewCacheTradingBases);
             panel30.Controls.Add(label47);
-            panel30.Controls.Add(LabelCoinbaseExchangeAllPairs);
+            panel30.Controls.Add(coinbaseNewCacheAllPairs);
             panel30.Controls.Add(label49);
-            panel30.Controls.Add(LabelCoinbaseExchangeTradingPairs);
+            panel30.Controls.Add(coinbaseNewCacheTradingPairs);
             panel30.Controls.Add(label51);
             panel30.Dock = DockStyle.Top;
             panel30.Location = new Point(3, 37);
@@ -1973,18 +1975,18 @@
             panel30.Size = new Size(514, 20);
             panel30.TabIndex = 143;
             // 
-            // LabelCoinbaseExchangeTradingQuotes
+            // coinbaseNewCacheTradingQuotes
             // 
-            LabelCoinbaseExchangeTradingQuotes.Dock = DockStyle.Left;
-            LabelCoinbaseExchangeTradingQuotes.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseExchangeTradingQuotes.Location = new Point(477, 3);
-            LabelCoinbaseExchangeTradingQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseExchangeTradingQuotes.Name = "LabelCoinbaseExchangeTradingQuotes";
-            LabelCoinbaseExchangeTradingQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseExchangeTradingQuotes.Size = new Size(38, 14);
-            LabelCoinbaseExchangeTradingQuotes.TabIndex = 151;
-            LabelCoinbaseExchangeTradingQuotes.Text = "0";
-            LabelCoinbaseExchangeTradingQuotes.TextAlign = ContentAlignment.TopRight;
+            coinbaseNewCacheTradingQuotes.Dock = DockStyle.Left;
+            coinbaseNewCacheTradingQuotes.ForeColor = SystemColors.ControlText;
+            coinbaseNewCacheTradingQuotes.Location = new Point(477, 3);
+            coinbaseNewCacheTradingQuotes.Margin = new Padding(4, 0, 4, 0);
+            coinbaseNewCacheTradingQuotes.Name = "coinbaseNewCacheTradingQuotes";
+            coinbaseNewCacheTradingQuotes.Padding = new Padding(0, 0, 3, 0);
+            coinbaseNewCacheTradingQuotes.Size = new Size(38, 14);
+            coinbaseNewCacheTradingQuotes.TabIndex = 151;
+            coinbaseNewCacheTradingQuotes.Text = "0";
+            coinbaseNewCacheTradingQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label41
             // 
@@ -1995,18 +1997,18 @@
             label41.TabIndex = 150;
             label41.Text = "Trading Quotes:";
             // 
-            // LabelCoinbaseExchangeTradingBases
+            // coinbaseNewCacheTradingBases
             // 
-            LabelCoinbaseExchangeTradingBases.Dock = DockStyle.Left;
-            LabelCoinbaseExchangeTradingBases.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseExchangeTradingBases.Location = new Point(341, 3);
-            LabelCoinbaseExchangeTradingBases.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseExchangeTradingBases.Name = "LabelCoinbaseExchangeTradingBases";
-            LabelCoinbaseExchangeTradingBases.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseExchangeTradingBases.Size = new Size(38, 14);
-            LabelCoinbaseExchangeTradingBases.TabIndex = 149;
-            LabelCoinbaseExchangeTradingBases.Text = "0";
-            LabelCoinbaseExchangeTradingBases.TextAlign = ContentAlignment.TopRight;
+            coinbaseNewCacheTradingBases.Dock = DockStyle.Left;
+            coinbaseNewCacheTradingBases.ForeColor = SystemColors.ControlText;
+            coinbaseNewCacheTradingBases.Location = new Point(341, 3);
+            coinbaseNewCacheTradingBases.Margin = new Padding(4, 0, 4, 0);
+            coinbaseNewCacheTradingBases.Name = "coinbaseNewCacheTradingBases";
+            coinbaseNewCacheTradingBases.Padding = new Padding(0, 0, 3, 0);
+            coinbaseNewCacheTradingBases.Size = new Size(38, 14);
+            coinbaseNewCacheTradingBases.TabIndex = 149;
+            coinbaseNewCacheTradingBases.Text = "0";
+            coinbaseNewCacheTradingBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label47
             // 
@@ -2017,18 +2019,18 @@
             label47.TabIndex = 148;
             label47.Text = "Trading Symbols:";
             // 
-            // LabelCoinbaseExchangeAllPairs
+            // coinbaseNewCacheAllPairs
             // 
-            LabelCoinbaseExchangeAllPairs.Dock = DockStyle.Left;
-            LabelCoinbaseExchangeAllPairs.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseExchangeAllPairs.Location = new Point(195, 3);
-            LabelCoinbaseExchangeAllPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseExchangeAllPairs.Name = "LabelCoinbaseExchangeAllPairs";
-            LabelCoinbaseExchangeAllPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseExchangeAllPairs.Size = new Size(38, 14);
-            LabelCoinbaseExchangeAllPairs.TabIndex = 147;
-            LabelCoinbaseExchangeAllPairs.Text = "0";
-            LabelCoinbaseExchangeAllPairs.TextAlign = ContentAlignment.TopRight;
+            coinbaseNewCacheAllPairs.Dock = DockStyle.Left;
+            coinbaseNewCacheAllPairs.ForeColor = SystemColors.ControlText;
+            coinbaseNewCacheAllPairs.Location = new Point(195, 3);
+            coinbaseNewCacheAllPairs.Margin = new Padding(4, 0, 4, 0);
+            coinbaseNewCacheAllPairs.Name = "coinbaseNewCacheAllPairs";
+            coinbaseNewCacheAllPairs.Padding = new Padding(0, 0, 3, 0);
+            coinbaseNewCacheAllPairs.Size = new Size(38, 14);
+            coinbaseNewCacheAllPairs.TabIndex = 147;
+            coinbaseNewCacheAllPairs.Text = "0";
+            coinbaseNewCacheAllPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label49
             // 
@@ -2039,18 +2041,18 @@
             label49.TabIndex = 146;
             label49.Text = "All pairs:";
             // 
-            // LabelCoinbaseExchangeTradingPairs
+            // coinbaseNewCacheTradingPairs
             // 
-            LabelCoinbaseExchangeTradingPairs.Dock = DockStyle.Left;
-            LabelCoinbaseExchangeTradingPairs.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseExchangeTradingPairs.Location = new Point(89, 3);
-            LabelCoinbaseExchangeTradingPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseExchangeTradingPairs.Name = "LabelCoinbaseExchangeTradingPairs";
-            LabelCoinbaseExchangeTradingPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelCoinbaseExchangeTradingPairs.Size = new Size(38, 14);
-            LabelCoinbaseExchangeTradingPairs.TabIndex = 145;
-            LabelCoinbaseExchangeTradingPairs.Text = "0";
-            LabelCoinbaseExchangeTradingPairs.TextAlign = ContentAlignment.TopRight;
+            coinbaseNewCacheTradingPairs.Dock = DockStyle.Left;
+            coinbaseNewCacheTradingPairs.ForeColor = SystemColors.ControlText;
+            coinbaseNewCacheTradingPairs.Location = new Point(89, 3);
+            coinbaseNewCacheTradingPairs.Margin = new Padding(4, 0, 4, 0);
+            coinbaseNewCacheTradingPairs.Name = "coinbaseNewCacheTradingPairs";
+            coinbaseNewCacheTradingPairs.Padding = new Padding(0, 0, 3, 0);
+            coinbaseNewCacheTradingPairs.Size = new Size(38, 14);
+            coinbaseNewCacheTradingPairs.TabIndex = 145;
+            coinbaseNewCacheTradingPairs.Text = "0";
+            coinbaseNewCacheTradingPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label51
             // 
@@ -2063,7 +2065,7 @@
             // 
             // panel29
             // 
-            panel29.Controls.Add(LabelCoinbaseExchangeStatus);
+            panel29.Controls.Add(LabelcoinbaseExchangeStatus);
             panel29.Controls.Add(label39);
             panel29.Dock = DockStyle.Top;
             panel29.Location = new Point(3, 17);
@@ -2072,19 +2074,19 @@
             panel29.Size = new Size(514, 20);
             panel29.TabIndex = 142;
             // 
-            // LabelCoinbaseExchangeStatus
+            // LabelcoinbaseExchangeStatus
             // 
-            LabelCoinbaseExchangeStatus.AutoSize = true;
-            LabelCoinbaseExchangeStatus.Dock = DockStyle.Left;
-            LabelCoinbaseExchangeStatus.Font = new Font("Verdana", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LabelCoinbaseExchangeStatus.ForeColor = SystemColors.ControlText;
-            LabelCoinbaseExchangeStatus.Location = new Point(63, 3);
-            LabelCoinbaseExchangeStatus.Margin = new Padding(4, 0, 4, 0);
-            LabelCoinbaseExchangeStatus.Name = "LabelCoinbaseExchangeStatus";
-            LabelCoinbaseExchangeStatus.Padding = new Padding(0, 0, 5, 0);
-            LabelCoinbaseExchangeStatus.Size = new Size(53, 13);
-            LabelCoinbaseExchangeStatus.TabIndex = 140;
-            LabelCoinbaseExchangeStatus.Text = "Online";
+            LabelcoinbaseExchangeStatus.AutoSize = true;
+            LabelcoinbaseExchangeStatus.Dock = DockStyle.Left;
+            LabelcoinbaseExchangeStatus.Font = new Font("Verdana", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LabelcoinbaseExchangeStatus.ForeColor = SystemColors.ControlText;
+            LabelcoinbaseExchangeStatus.Location = new Point(63, 3);
+            LabelcoinbaseExchangeStatus.Margin = new Padding(4, 0, 4, 0);
+            LabelcoinbaseExchangeStatus.Name = "LabelcoinbaseExchangeStatus";
+            LabelcoinbaseExchangeStatus.Padding = new Padding(0, 0, 5, 0);
+            LabelcoinbaseExchangeStatus.Size = new Size(55, 13);
+            LabelcoinbaseExchangeStatus.TabIndex = 140;
+            LabelcoinbaseExchangeStatus.Text = "Offline";
             // 
             // label39
             // 
@@ -2126,11 +2128,11 @@
             // 
             // panel28
             // 
-            panel28.Controls.Add(LabelBybitDatabaseHaltedQuotes);
+            panel28.Controls.Add(bybitOldCacheHaltedQuotes);
             panel28.Controls.Add(label15);
-            panel28.Controls.Add(LabelBybitDatabaseHaltedBases);
+            panel28.Controls.Add(bybitOldCacheHaltedBases);
             panel28.Controls.Add(label17);
-            panel28.Controls.Add(LabelBybitDatabaseHaltedPairs);
+            panel28.Controls.Add(bybitOldCacheHaltedPairs);
             panel28.Controls.Add(label22);
             panel28.Dock = DockStyle.Top;
             panel28.Location = new Point(3, 164);
@@ -2139,18 +2141,18 @@
             panel28.Size = new Size(514, 20);
             panel28.TabIndex = 140;
             // 
-            // LabelBybitDatabaseHaltedQuotes
+            // bybitOldCacheHaltedQuotes
             // 
-            LabelBybitDatabaseHaltedQuotes.Dock = DockStyle.Left;
-            LabelBybitDatabaseHaltedQuotes.ForeColor = SystemColors.ControlText;
-            LabelBybitDatabaseHaltedQuotes.Location = new Point(477, 3);
-            LabelBybitDatabaseHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitDatabaseHaltedQuotes.Name = "LabelBybitDatabaseHaltedQuotes";
-            LabelBybitDatabaseHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitDatabaseHaltedQuotes.Size = new Size(38, 14);
-            LabelBybitDatabaseHaltedQuotes.TabIndex = 168;
-            LabelBybitDatabaseHaltedQuotes.Text = "0";
-            LabelBybitDatabaseHaltedQuotes.TextAlign = ContentAlignment.TopRight;
+            bybitOldCacheHaltedQuotes.Dock = DockStyle.Left;
+            bybitOldCacheHaltedQuotes.ForeColor = SystemColors.ControlText;
+            bybitOldCacheHaltedQuotes.Location = new Point(477, 3);
+            bybitOldCacheHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
+            bybitOldCacheHaltedQuotes.Name = "bybitOldCacheHaltedQuotes";
+            bybitOldCacheHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
+            bybitOldCacheHaltedQuotes.Size = new Size(38, 14);
+            bybitOldCacheHaltedQuotes.TabIndex = 168;
+            bybitOldCacheHaltedQuotes.Text = "0";
+            bybitOldCacheHaltedQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label15
             // 
@@ -2161,18 +2163,18 @@
             label15.TabIndex = 167;
             label15.Text = "Halted Quotes:";
             // 
-            // LabelBybitDatabaseHaltedBases
+            // bybitOldCacheHaltedBases
             // 
-            LabelBybitDatabaseHaltedBases.Dock = DockStyle.Left;
-            LabelBybitDatabaseHaltedBases.ForeColor = SystemColors.ControlText;
-            LabelBybitDatabaseHaltedBases.Location = new Point(341, 3);
-            LabelBybitDatabaseHaltedBases.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitDatabaseHaltedBases.Name = "LabelBybitDatabaseHaltedBases";
-            LabelBybitDatabaseHaltedBases.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitDatabaseHaltedBases.Size = new Size(38, 14);
-            LabelBybitDatabaseHaltedBases.TabIndex = 166;
-            LabelBybitDatabaseHaltedBases.Text = "0";
-            LabelBybitDatabaseHaltedBases.TextAlign = ContentAlignment.TopRight;
+            bybitOldCacheHaltedBases.Dock = DockStyle.Left;
+            bybitOldCacheHaltedBases.ForeColor = SystemColors.ControlText;
+            bybitOldCacheHaltedBases.Location = new Point(341, 3);
+            bybitOldCacheHaltedBases.Margin = new Padding(4, 0, 4, 0);
+            bybitOldCacheHaltedBases.Name = "bybitOldCacheHaltedBases";
+            bybitOldCacheHaltedBases.Padding = new Padding(0, 0, 3, 0);
+            bybitOldCacheHaltedBases.Size = new Size(38, 14);
+            bybitOldCacheHaltedBases.TabIndex = 166;
+            bybitOldCacheHaltedBases.Text = "0";
+            bybitOldCacheHaltedBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label17
             // 
@@ -2184,17 +2186,17 @@
             label17.TabIndex = 165;
             label17.Text = "Halted Symbols:";
             // 
-            // LabelBybitDatabaseHaltedPairs
+            // bybitOldCacheHaltedPairs
             // 
-            LabelBybitDatabaseHaltedPairs.Dock = DockStyle.Left;
-            LabelBybitDatabaseHaltedPairs.Location = new Point(89, 3);
-            LabelBybitDatabaseHaltedPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitDatabaseHaltedPairs.Name = "LabelBybitDatabaseHaltedPairs";
-            LabelBybitDatabaseHaltedPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitDatabaseHaltedPairs.Size = new Size(38, 14);
-            LabelBybitDatabaseHaltedPairs.TabIndex = 164;
-            LabelBybitDatabaseHaltedPairs.Text = "0";
-            LabelBybitDatabaseHaltedPairs.TextAlign = ContentAlignment.TopRight;
+            bybitOldCacheHaltedPairs.Dock = DockStyle.Left;
+            bybitOldCacheHaltedPairs.Location = new Point(89, 3);
+            bybitOldCacheHaltedPairs.Margin = new Padding(4, 0, 4, 0);
+            bybitOldCacheHaltedPairs.Name = "bybitOldCacheHaltedPairs";
+            bybitOldCacheHaltedPairs.Padding = new Padding(0, 0, 3, 0);
+            bybitOldCacheHaltedPairs.Size = new Size(38, 14);
+            bybitOldCacheHaltedPairs.TabIndex = 164;
+            bybitOldCacheHaltedPairs.Text = "0";
+            bybitOldCacheHaltedPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label22
             // 
@@ -2207,13 +2209,13 @@
             // 
             // panel27
             // 
-            panel27.Controls.Add(LabelBybitDatabaseTradingQuotes);
+            panel27.Controls.Add(bybitOldCacheTradingQuotes);
             panel27.Controls.Add(label16);
-            panel27.Controls.Add(LabelBybitDatabaseTradingBases);
+            panel27.Controls.Add(bybitOldCacheTradingBases);
             panel27.Controls.Add(label18);
-            panel27.Controls.Add(LabelBybitDatabaseAllPairs);
+            panel27.Controls.Add(bybitOldCacheAllPairs);
             panel27.Controls.Add(label21);
-            panel27.Controls.Add(LabelBybitDatabaseTradingPairs);
+            panel27.Controls.Add(bybitOldCacheTradingPairs);
             panel27.Controls.Add(label23);
             panel27.Dock = DockStyle.Top;
             panel27.Location = new Point(3, 144);
@@ -2222,18 +2224,18 @@
             panel27.Size = new Size(514, 20);
             panel27.TabIndex = 139;
             // 
-            // LabelBybitDatabaseTradingQuotes
+            // bybitOldCacheTradingQuotes
             // 
-            LabelBybitDatabaseTradingQuotes.Dock = DockStyle.Left;
-            LabelBybitDatabaseTradingQuotes.ForeColor = SystemColors.ControlText;
-            LabelBybitDatabaseTradingQuotes.Location = new Point(477, 3);
-            LabelBybitDatabaseTradingQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitDatabaseTradingQuotes.Name = "LabelBybitDatabaseTradingQuotes";
-            LabelBybitDatabaseTradingQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitDatabaseTradingQuotes.Size = new Size(38, 14);
-            LabelBybitDatabaseTradingQuotes.TabIndex = 152;
-            LabelBybitDatabaseTradingQuotes.Text = "0";
-            LabelBybitDatabaseTradingQuotes.TextAlign = ContentAlignment.TopRight;
+            bybitOldCacheTradingQuotes.Dock = DockStyle.Left;
+            bybitOldCacheTradingQuotes.ForeColor = SystemColors.ControlText;
+            bybitOldCacheTradingQuotes.Location = new Point(477, 3);
+            bybitOldCacheTradingQuotes.Margin = new Padding(4, 0, 4, 0);
+            bybitOldCacheTradingQuotes.Name = "bybitOldCacheTradingQuotes";
+            bybitOldCacheTradingQuotes.Padding = new Padding(0, 0, 3, 0);
+            bybitOldCacheTradingQuotes.Size = new Size(38, 14);
+            bybitOldCacheTradingQuotes.TabIndex = 152;
+            bybitOldCacheTradingQuotes.Text = "0";
+            bybitOldCacheTradingQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label16
             // 
@@ -2244,18 +2246,18 @@
             label16.TabIndex = 151;
             label16.Text = "Trading Quotes:";
             // 
-            // LabelBybitDatabaseTradingBases
+            // bybitOldCacheTradingBases
             // 
-            LabelBybitDatabaseTradingBases.Dock = DockStyle.Left;
-            LabelBybitDatabaseTradingBases.ForeColor = SystemColors.ControlText;
-            LabelBybitDatabaseTradingBases.Location = new Point(341, 3);
-            LabelBybitDatabaseTradingBases.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitDatabaseTradingBases.Name = "LabelBybitDatabaseTradingBases";
-            LabelBybitDatabaseTradingBases.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitDatabaseTradingBases.Size = new Size(38, 14);
-            LabelBybitDatabaseTradingBases.TabIndex = 150;
-            LabelBybitDatabaseTradingBases.Text = "0";
-            LabelBybitDatabaseTradingBases.TextAlign = ContentAlignment.TopRight;
+            bybitOldCacheTradingBases.Dock = DockStyle.Left;
+            bybitOldCacheTradingBases.ForeColor = SystemColors.ControlText;
+            bybitOldCacheTradingBases.Location = new Point(341, 3);
+            bybitOldCacheTradingBases.Margin = new Padding(4, 0, 4, 0);
+            bybitOldCacheTradingBases.Name = "bybitOldCacheTradingBases";
+            bybitOldCacheTradingBases.Padding = new Padding(0, 0, 3, 0);
+            bybitOldCacheTradingBases.Size = new Size(38, 14);
+            bybitOldCacheTradingBases.TabIndex = 150;
+            bybitOldCacheTradingBases.Text = "0";
+            bybitOldCacheTradingBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label18
             // 
@@ -2266,17 +2268,17 @@
             label18.TabIndex = 149;
             label18.Text = "Trading Symbols:";
             // 
-            // LabelBybitDatabaseAllPairs
+            // bybitOldCacheAllPairs
             // 
-            LabelBybitDatabaseAllPairs.Dock = DockStyle.Left;
-            LabelBybitDatabaseAllPairs.Location = new Point(195, 3);
-            LabelBybitDatabaseAllPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitDatabaseAllPairs.Name = "LabelBybitDatabaseAllPairs";
-            LabelBybitDatabaseAllPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitDatabaseAllPairs.Size = new Size(38, 14);
-            LabelBybitDatabaseAllPairs.TabIndex = 148;
-            LabelBybitDatabaseAllPairs.Text = "0";
-            LabelBybitDatabaseAllPairs.TextAlign = ContentAlignment.TopRight;
+            bybitOldCacheAllPairs.Dock = DockStyle.Left;
+            bybitOldCacheAllPairs.Location = new Point(195, 3);
+            bybitOldCacheAllPairs.Margin = new Padding(4, 0, 4, 0);
+            bybitOldCacheAllPairs.Name = "bybitOldCacheAllPairs";
+            bybitOldCacheAllPairs.Padding = new Padding(0, 0, 3, 0);
+            bybitOldCacheAllPairs.Size = new Size(38, 14);
+            bybitOldCacheAllPairs.TabIndex = 148;
+            bybitOldCacheAllPairs.Text = "0";
+            bybitOldCacheAllPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label21
             // 
@@ -2287,17 +2289,17 @@
             label21.TabIndex = 147;
             label21.Text = "All pairs:";
             // 
-            // LabelBybitDatabaseTradingPairs
+            // bybitOldCacheTradingPairs
             // 
-            LabelBybitDatabaseTradingPairs.Dock = DockStyle.Left;
-            LabelBybitDatabaseTradingPairs.Location = new Point(89, 3);
-            LabelBybitDatabaseTradingPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitDatabaseTradingPairs.Name = "LabelBybitDatabaseTradingPairs";
-            LabelBybitDatabaseTradingPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitDatabaseTradingPairs.Size = new Size(38, 14);
-            LabelBybitDatabaseTradingPairs.TabIndex = 146;
-            LabelBybitDatabaseTradingPairs.Text = "0";
-            LabelBybitDatabaseTradingPairs.TextAlign = ContentAlignment.TopRight;
+            bybitOldCacheTradingPairs.Dock = DockStyle.Left;
+            bybitOldCacheTradingPairs.Location = new Point(89, 3);
+            bybitOldCacheTradingPairs.Margin = new Padding(4, 0, 4, 0);
+            bybitOldCacheTradingPairs.Name = "bybitOldCacheTradingPairs";
+            bybitOldCacheTradingPairs.Padding = new Padding(0, 0, 3, 0);
+            bybitOldCacheTradingPairs.Size = new Size(38, 14);
+            bybitOldCacheTradingPairs.TabIndex = 146;
+            bybitOldCacheTradingPairs.Text = "0";
+            bybitOldCacheTradingPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label23
             // 
@@ -2440,13 +2442,13 @@
             // 
             // panel23
             // 
-            panel23.Controls.Add(LabelBybitExchangeHaltedQuotes);
+            panel23.Controls.Add(bybitNewCacheHaltedQuotes);
             panel23.Controls.Add(label24);
-            panel23.Controls.Add(LabeBybitExchangeHaltedBases);
+            panel23.Controls.Add(bybitNewCacheHaltedBases);
             panel23.Controls.Add(label27);
-            panel23.Controls.Add(LabelBybitExchangeNewPairs);
+            panel23.Controls.Add(bybitNewPairs);
             panel23.Controls.Add(label33);
-            panel23.Controls.Add(LabelBybitExchangeHaltedPairs);
+            panel23.Controls.Add(bybitNewCacheHaltedPairs);
             panel23.Controls.Add(label35);
             panel23.Dock = DockStyle.Top;
             panel23.Location = new Point(3, 57);
@@ -2455,18 +2457,18 @@
             panel23.Size = new Size(514, 20);
             panel23.TabIndex = 135;
             // 
-            // LabelBybitExchangeHaltedQuotes
+            // bybitNewCacheHaltedQuotes
             // 
-            LabelBybitExchangeHaltedQuotes.Dock = DockStyle.Left;
-            LabelBybitExchangeHaltedQuotes.ForeColor = SystemColors.ControlText;
-            LabelBybitExchangeHaltedQuotes.Location = new Point(477, 3);
-            LabelBybitExchangeHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitExchangeHaltedQuotes.Name = "LabelBybitExchangeHaltedQuotes";
-            LabelBybitExchangeHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitExchangeHaltedQuotes.Size = new Size(38, 14);
-            LabelBybitExchangeHaltedQuotes.TabIndex = 146;
-            LabelBybitExchangeHaltedQuotes.Text = "0";
-            LabelBybitExchangeHaltedQuotes.TextAlign = ContentAlignment.TopRight;
+            bybitNewCacheHaltedQuotes.Dock = DockStyle.Left;
+            bybitNewCacheHaltedQuotes.ForeColor = SystemColors.ControlText;
+            bybitNewCacheHaltedQuotes.Location = new Point(477, 3);
+            bybitNewCacheHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
+            bybitNewCacheHaltedQuotes.Name = "bybitNewCacheHaltedQuotes";
+            bybitNewCacheHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
+            bybitNewCacheHaltedQuotes.Size = new Size(38, 14);
+            bybitNewCacheHaltedQuotes.TabIndex = 146;
+            bybitNewCacheHaltedQuotes.Text = "0";
+            bybitNewCacheHaltedQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label24
             // 
@@ -2477,18 +2479,18 @@
             label24.TabIndex = 145;
             label24.Text = "Halted Quotes:";
             // 
-            // LabeBybitExchangeHaltedBases
+            // bybitNewCacheHaltedBases
             // 
-            LabeBybitExchangeHaltedBases.Dock = DockStyle.Left;
-            LabeBybitExchangeHaltedBases.ForeColor = SystemColors.ControlText;
-            LabeBybitExchangeHaltedBases.Location = new Point(341, 3);
-            LabeBybitExchangeHaltedBases.Margin = new Padding(4, 0, 4, 0);
-            LabeBybitExchangeHaltedBases.Name = "LabeBybitExchangeHaltedBases";
-            LabeBybitExchangeHaltedBases.Padding = new Padding(0, 0, 3, 0);
-            LabeBybitExchangeHaltedBases.Size = new Size(38, 14);
-            LabeBybitExchangeHaltedBases.TabIndex = 144;
-            LabeBybitExchangeHaltedBases.Text = "0";
-            LabeBybitExchangeHaltedBases.TextAlign = ContentAlignment.TopRight;
+            bybitNewCacheHaltedBases.Dock = DockStyle.Left;
+            bybitNewCacheHaltedBases.ForeColor = SystemColors.ControlText;
+            bybitNewCacheHaltedBases.Location = new Point(341, 3);
+            bybitNewCacheHaltedBases.Margin = new Padding(4, 0, 4, 0);
+            bybitNewCacheHaltedBases.Name = "bybitNewCacheHaltedBases";
+            bybitNewCacheHaltedBases.Padding = new Padding(0, 0, 3, 0);
+            bybitNewCacheHaltedBases.Size = new Size(38, 14);
+            bybitNewCacheHaltedBases.TabIndex = 144;
+            bybitNewCacheHaltedBases.Text = "0";
+            bybitNewCacheHaltedBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label27
             // 
@@ -2499,18 +2501,18 @@
             label27.TabIndex = 143;
             label27.Text = "Halted Symbols:";
             // 
-            // LabelBybitExchangeNewPairs
+            // bybitNewPairs
             // 
-            LabelBybitExchangeNewPairs.Dock = DockStyle.Left;
-            LabelBybitExchangeNewPairs.ForeColor = SystemColors.ControlText;
-            LabelBybitExchangeNewPairs.Location = new Point(195, 3);
-            LabelBybitExchangeNewPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitExchangeNewPairs.Name = "LabelBybitExchangeNewPairs";
-            LabelBybitExchangeNewPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitExchangeNewPairs.Size = new Size(38, 14);
-            LabelBybitExchangeNewPairs.TabIndex = 142;
-            LabelBybitExchangeNewPairs.Text = "0";
-            LabelBybitExchangeNewPairs.TextAlign = ContentAlignment.TopRight;
+            bybitNewPairs.Dock = DockStyle.Left;
+            bybitNewPairs.ForeColor = SystemColors.ControlText;
+            bybitNewPairs.Location = new Point(195, 3);
+            bybitNewPairs.Margin = new Padding(4, 0, 4, 0);
+            bybitNewPairs.Name = "bybitNewPairs";
+            bybitNewPairs.Padding = new Padding(0, 0, 3, 0);
+            bybitNewPairs.Size = new Size(38, 14);
+            bybitNewPairs.TabIndex = 142;
+            bybitNewPairs.Text = "0";
+            bybitNewPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label33
             // 
@@ -2521,18 +2523,18 @@
             label33.TabIndex = 141;
             label33.Text = "New pairs:";
             // 
-            // LabelBybitExchangeHaltedPairs
+            // bybitNewCacheHaltedPairs
             // 
-            LabelBybitExchangeHaltedPairs.Dock = DockStyle.Left;
-            LabelBybitExchangeHaltedPairs.ForeColor = SystemColors.ControlText;
-            LabelBybitExchangeHaltedPairs.Location = new Point(89, 3);
-            LabelBybitExchangeHaltedPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitExchangeHaltedPairs.Name = "LabelBybitExchangeHaltedPairs";
-            LabelBybitExchangeHaltedPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitExchangeHaltedPairs.Size = new Size(38, 14);
-            LabelBybitExchangeHaltedPairs.TabIndex = 140;
-            LabelBybitExchangeHaltedPairs.Text = "0";
-            LabelBybitExchangeHaltedPairs.TextAlign = ContentAlignment.TopRight;
+            bybitNewCacheHaltedPairs.Dock = DockStyle.Left;
+            bybitNewCacheHaltedPairs.ForeColor = SystemColors.ControlText;
+            bybitNewCacheHaltedPairs.Location = new Point(89, 3);
+            bybitNewCacheHaltedPairs.Margin = new Padding(4, 0, 4, 0);
+            bybitNewCacheHaltedPairs.Name = "bybitNewCacheHaltedPairs";
+            bybitNewCacheHaltedPairs.Padding = new Padding(0, 0, 3, 0);
+            bybitNewCacheHaltedPairs.Size = new Size(38, 14);
+            bybitNewCacheHaltedPairs.TabIndex = 140;
+            bybitNewCacheHaltedPairs.Text = "0";
+            bybitNewCacheHaltedPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label35
             // 
@@ -2545,13 +2547,13 @@
             // 
             // panel22
             // 
-            panel22.Controls.Add(LabelBybitExchangeTradingQuotes);
+            panel22.Controls.Add(bybitNewCacheTradingQuotes);
             panel22.Controls.Add(label26);
-            panel22.Controls.Add(LabelBybitExchangeTradingBases);
+            panel22.Controls.Add(bybitNewCacheTradingBases);
             panel22.Controls.Add(label29);
-            panel22.Controls.Add(LabelBybitExchangeAllPairs);
+            panel22.Controls.Add(bybitNewCacheAllPairs);
             panel22.Controls.Add(label34);
-            panel22.Controls.Add(LabelBybitExchangeTradingPairs);
+            panel22.Controls.Add(bybitNewCacheTradingPairs);
             panel22.Controls.Add(label3);
             panel22.Dock = DockStyle.Top;
             panel22.Location = new Point(3, 37);
@@ -2560,18 +2562,18 @@
             panel22.Size = new Size(514, 20);
             panel22.TabIndex = 134;
             // 
-            // LabelBybitExchangeTradingQuotes
+            // bybitNewCacheTradingQuotes
             // 
-            LabelBybitExchangeTradingQuotes.Dock = DockStyle.Left;
-            LabelBybitExchangeTradingQuotes.ForeColor = SystemColors.ControlText;
-            LabelBybitExchangeTradingQuotes.Location = new Point(477, 3);
-            LabelBybitExchangeTradingQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitExchangeTradingQuotes.Name = "LabelBybitExchangeTradingQuotes";
-            LabelBybitExchangeTradingQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitExchangeTradingQuotes.Size = new Size(38, 14);
-            LabelBybitExchangeTradingQuotes.TabIndex = 137;
-            LabelBybitExchangeTradingQuotes.Text = "0";
-            LabelBybitExchangeTradingQuotes.TextAlign = ContentAlignment.TopRight;
+            bybitNewCacheTradingQuotes.Dock = DockStyle.Left;
+            bybitNewCacheTradingQuotes.ForeColor = SystemColors.ControlText;
+            bybitNewCacheTradingQuotes.Location = new Point(477, 3);
+            bybitNewCacheTradingQuotes.Margin = new Padding(4, 0, 4, 0);
+            bybitNewCacheTradingQuotes.Name = "bybitNewCacheTradingQuotes";
+            bybitNewCacheTradingQuotes.Padding = new Padding(0, 0, 3, 0);
+            bybitNewCacheTradingQuotes.Size = new Size(38, 14);
+            bybitNewCacheTradingQuotes.TabIndex = 137;
+            bybitNewCacheTradingQuotes.Text = "0";
+            bybitNewCacheTradingQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label26
             // 
@@ -2582,18 +2584,18 @@
             label26.TabIndex = 136;
             label26.Text = "Trading Quotes:";
             // 
-            // LabelBybitExchangeTradingBases
+            // bybitNewCacheTradingBases
             // 
-            LabelBybitExchangeTradingBases.Dock = DockStyle.Left;
-            LabelBybitExchangeTradingBases.ForeColor = SystemColors.ControlText;
-            LabelBybitExchangeTradingBases.Location = new Point(341, 3);
-            LabelBybitExchangeTradingBases.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitExchangeTradingBases.Name = "LabelBybitExchangeTradingBases";
-            LabelBybitExchangeTradingBases.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitExchangeTradingBases.Size = new Size(38, 14);
-            LabelBybitExchangeTradingBases.TabIndex = 135;
-            LabelBybitExchangeTradingBases.Text = "0";
-            LabelBybitExchangeTradingBases.TextAlign = ContentAlignment.TopRight;
+            bybitNewCacheTradingBases.Dock = DockStyle.Left;
+            bybitNewCacheTradingBases.ForeColor = SystemColors.ControlText;
+            bybitNewCacheTradingBases.Location = new Point(341, 3);
+            bybitNewCacheTradingBases.Margin = new Padding(4, 0, 4, 0);
+            bybitNewCacheTradingBases.Name = "bybitNewCacheTradingBases";
+            bybitNewCacheTradingBases.Padding = new Padding(0, 0, 3, 0);
+            bybitNewCacheTradingBases.Size = new Size(38, 14);
+            bybitNewCacheTradingBases.TabIndex = 135;
+            bybitNewCacheTradingBases.Text = "0";
+            bybitNewCacheTradingBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label29
             // 
@@ -2604,18 +2606,18 @@
             label29.TabIndex = 134;
             label29.Text = "Trading Symbols:";
             // 
-            // LabelBybitExchangeAllPairs
+            // bybitNewCacheAllPairs
             // 
-            LabelBybitExchangeAllPairs.Dock = DockStyle.Left;
-            LabelBybitExchangeAllPairs.ForeColor = SystemColors.ControlText;
-            LabelBybitExchangeAllPairs.Location = new Point(195, 3);
-            LabelBybitExchangeAllPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitExchangeAllPairs.Name = "LabelBybitExchangeAllPairs";
-            LabelBybitExchangeAllPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitExchangeAllPairs.Size = new Size(38, 14);
-            LabelBybitExchangeAllPairs.TabIndex = 133;
-            LabelBybitExchangeAllPairs.Text = "0";
-            LabelBybitExchangeAllPairs.TextAlign = ContentAlignment.TopRight;
+            bybitNewCacheAllPairs.Dock = DockStyle.Left;
+            bybitNewCacheAllPairs.ForeColor = SystemColors.ControlText;
+            bybitNewCacheAllPairs.Location = new Point(195, 3);
+            bybitNewCacheAllPairs.Margin = new Padding(4, 0, 4, 0);
+            bybitNewCacheAllPairs.Name = "bybitNewCacheAllPairs";
+            bybitNewCacheAllPairs.Padding = new Padding(0, 0, 3, 0);
+            bybitNewCacheAllPairs.Size = new Size(38, 14);
+            bybitNewCacheAllPairs.TabIndex = 133;
+            bybitNewCacheAllPairs.Text = "0";
+            bybitNewCacheAllPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label34
             // 
@@ -2626,18 +2628,18 @@
             label34.TabIndex = 132;
             label34.Text = "All pairs:";
             // 
-            // LabelBybitExchangeTradingPairs
+            // bybitNewCacheTradingPairs
             // 
-            LabelBybitExchangeTradingPairs.Dock = DockStyle.Left;
-            LabelBybitExchangeTradingPairs.ForeColor = SystemColors.ControlText;
-            LabelBybitExchangeTradingPairs.Location = new Point(89, 3);
-            LabelBybitExchangeTradingPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitExchangeTradingPairs.Name = "LabelBybitExchangeTradingPairs";
-            LabelBybitExchangeTradingPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBybitExchangeTradingPairs.Size = new Size(38, 14);
-            LabelBybitExchangeTradingPairs.TabIndex = 131;
-            LabelBybitExchangeTradingPairs.Text = "0";
-            LabelBybitExchangeTradingPairs.TextAlign = ContentAlignment.TopRight;
+            bybitNewCacheTradingPairs.Dock = DockStyle.Left;
+            bybitNewCacheTradingPairs.ForeColor = SystemColors.ControlText;
+            bybitNewCacheTradingPairs.Location = new Point(89, 3);
+            bybitNewCacheTradingPairs.Margin = new Padding(4, 0, 4, 0);
+            bybitNewCacheTradingPairs.Name = "bybitNewCacheTradingPairs";
+            bybitNewCacheTradingPairs.Padding = new Padding(0, 0, 3, 0);
+            bybitNewCacheTradingPairs.Size = new Size(38, 14);
+            bybitNewCacheTradingPairs.TabIndex = 131;
+            bybitNewCacheTradingPairs.Text = "0";
+            bybitNewCacheTradingPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label3
             // 
@@ -2650,7 +2652,7 @@
             // 
             // panel21
             // 
-            panel21.Controls.Add(LabelBybitExchangeStatus);
+            panel21.Controls.Add(LabelbybitExchangeStatus);
             panel21.Controls.Add(label43);
             panel21.Dock = DockStyle.Top;
             panel21.Location = new Point(3, 17);
@@ -2659,19 +2661,19 @@
             panel21.Size = new Size(514, 20);
             panel21.TabIndex = 133;
             // 
-            // LabelBybitExchangeStatus
+            // LabelbybitExchangeStatus
             // 
-            LabelBybitExchangeStatus.AutoSize = true;
-            LabelBybitExchangeStatus.Dock = DockStyle.Left;
-            LabelBybitExchangeStatus.Font = new Font("Verdana", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LabelBybitExchangeStatus.ForeColor = SystemColors.ControlText;
-            LabelBybitExchangeStatus.Location = new Point(63, 3);
-            LabelBybitExchangeStatus.Margin = new Padding(4, 0, 4, 0);
-            LabelBybitExchangeStatus.Name = "LabelBybitExchangeStatus";
-            LabelBybitExchangeStatus.Padding = new Padding(0, 0, 5, 0);
-            LabelBybitExchangeStatus.Size = new Size(53, 13);
-            LabelBybitExchangeStatus.TabIndex = 139;
-            LabelBybitExchangeStatus.Text = "Online";
+            LabelbybitExchangeStatus.AutoSize = true;
+            LabelbybitExchangeStatus.Dock = DockStyle.Left;
+            LabelbybitExchangeStatus.Font = new Font("Verdana", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LabelbybitExchangeStatus.ForeColor = SystemColors.ControlText;
+            LabelbybitExchangeStatus.Location = new Point(63, 3);
+            LabelbybitExchangeStatus.Margin = new Padding(4, 0, 4, 0);
+            LabelbybitExchangeStatus.Name = "LabelbybitExchangeStatus";
+            LabelbybitExchangeStatus.Padding = new Padding(0, 0, 5, 0);
+            LabelbybitExchangeStatus.Size = new Size(55, 13);
+            LabelbybitExchangeStatus.TabIndex = 139;
+            LabelbybitExchangeStatus.Text = "Offline";
             // 
             // label43
             // 
@@ -2713,11 +2715,11 @@
             // 
             // panel20
             // 
-            panel20.Controls.Add(LabelBinanceDatabaseHaltedQuotes);
+            panel20.Controls.Add(binanceOldCacheHaltedQuotes);
             panel20.Controls.Add(label25);
-            panel20.Controls.Add(LabelBinanceDatabaseHaltedBases);
+            panel20.Controls.Add(binanceOldCacheHaltedBases);
             panel20.Controls.Add(label19);
-            panel20.Controls.Add(LabelBinanceDatabaseHaltedPairs);
+            panel20.Controls.Add(binanceOldCacheHaltedPairs);
             panel20.Controls.Add(label2);
             panel20.Dock = DockStyle.Top;
             panel20.Location = new Point(3, 164);
@@ -2726,18 +2728,18 @@
             panel20.Size = new Size(514, 20);
             panel20.TabIndex = 110;
             // 
-            // LabelBinanceDatabaseHaltedQuotes
+            // binanceOldCacheHaltedQuotes
             // 
-            LabelBinanceDatabaseHaltedQuotes.Dock = DockStyle.Left;
-            LabelBinanceDatabaseHaltedQuotes.ForeColor = SystemColors.ControlText;
-            LabelBinanceDatabaseHaltedQuotes.Location = new Point(477, 3);
-            LabelBinanceDatabaseHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceDatabaseHaltedQuotes.Name = "LabelBinanceDatabaseHaltedQuotes";
-            LabelBinanceDatabaseHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceDatabaseHaltedQuotes.Size = new Size(38, 14);
-            LabelBinanceDatabaseHaltedQuotes.TabIndex = 111;
-            LabelBinanceDatabaseHaltedQuotes.Text = "0";
-            LabelBinanceDatabaseHaltedQuotes.TextAlign = ContentAlignment.TopRight;
+            binanceOldCacheHaltedQuotes.Dock = DockStyle.Left;
+            binanceOldCacheHaltedQuotes.ForeColor = SystemColors.ControlText;
+            binanceOldCacheHaltedQuotes.Location = new Point(477, 3);
+            binanceOldCacheHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
+            binanceOldCacheHaltedQuotes.Name = "binanceOldCacheHaltedQuotes";
+            binanceOldCacheHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
+            binanceOldCacheHaltedQuotes.Size = new Size(38, 14);
+            binanceOldCacheHaltedQuotes.TabIndex = 111;
+            binanceOldCacheHaltedQuotes.Text = "0";
+            binanceOldCacheHaltedQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label25
             // 
@@ -2748,18 +2750,18 @@
             label25.TabIndex = 110;
             label25.Text = "Halted Quotes:";
             // 
-            // LabelBinanceDatabaseHaltedBases
+            // binanceOldCacheHaltedBases
             // 
-            LabelBinanceDatabaseHaltedBases.Dock = DockStyle.Left;
-            LabelBinanceDatabaseHaltedBases.ForeColor = SystemColors.ControlText;
-            LabelBinanceDatabaseHaltedBases.Location = new Point(341, 3);
-            LabelBinanceDatabaseHaltedBases.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceDatabaseHaltedBases.Name = "LabelBinanceDatabaseHaltedBases";
-            LabelBinanceDatabaseHaltedBases.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceDatabaseHaltedBases.Size = new Size(38, 14);
-            LabelBinanceDatabaseHaltedBases.TabIndex = 109;
-            LabelBinanceDatabaseHaltedBases.Text = "0";
-            LabelBinanceDatabaseHaltedBases.TextAlign = ContentAlignment.TopRight;
+            binanceOldCacheHaltedBases.Dock = DockStyle.Left;
+            binanceOldCacheHaltedBases.ForeColor = SystemColors.ControlText;
+            binanceOldCacheHaltedBases.Location = new Point(341, 3);
+            binanceOldCacheHaltedBases.Margin = new Padding(4, 0, 4, 0);
+            binanceOldCacheHaltedBases.Name = "binanceOldCacheHaltedBases";
+            binanceOldCacheHaltedBases.Padding = new Padding(0, 0, 3, 0);
+            binanceOldCacheHaltedBases.Size = new Size(38, 14);
+            binanceOldCacheHaltedBases.TabIndex = 109;
+            binanceOldCacheHaltedBases.Text = "0";
+            binanceOldCacheHaltedBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label19
             // 
@@ -2771,17 +2773,17 @@
             label19.TabIndex = 108;
             label19.Text = "Halted Symbols:";
             // 
-            // LabelBinanceDatabaseHaltedPairs
+            // binanceOldCacheHaltedPairs
             // 
-            LabelBinanceDatabaseHaltedPairs.Dock = DockStyle.Left;
-            LabelBinanceDatabaseHaltedPairs.Location = new Point(89, 3);
-            LabelBinanceDatabaseHaltedPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceDatabaseHaltedPairs.Name = "LabelBinanceDatabaseHaltedPairs";
-            LabelBinanceDatabaseHaltedPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceDatabaseHaltedPairs.Size = new Size(38, 14);
-            LabelBinanceDatabaseHaltedPairs.TabIndex = 107;
-            LabelBinanceDatabaseHaltedPairs.Text = "0";
-            LabelBinanceDatabaseHaltedPairs.TextAlign = ContentAlignment.TopRight;
+            binanceOldCacheHaltedPairs.Dock = DockStyle.Left;
+            binanceOldCacheHaltedPairs.Location = new Point(89, 3);
+            binanceOldCacheHaltedPairs.Margin = new Padding(4, 0, 4, 0);
+            binanceOldCacheHaltedPairs.Name = "binanceOldCacheHaltedPairs";
+            binanceOldCacheHaltedPairs.Padding = new Padding(0, 0, 3, 0);
+            binanceOldCacheHaltedPairs.Size = new Size(38, 14);
+            binanceOldCacheHaltedPairs.TabIndex = 107;
+            binanceOldCacheHaltedPairs.Text = "0";
+            binanceOldCacheHaltedPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label2
             // 
@@ -2794,13 +2796,13 @@
             // 
             // panel19
             // 
-            panel19.Controls.Add(LabelBinanceDatabaseTradingQuotes);
+            panel19.Controls.Add(binanceOldCacheTradingQuotes);
             panel19.Controls.Add(label28);
-            panel19.Controls.Add(LabelBinanceDatabaseTradingBases);
+            panel19.Controls.Add(binanceOldCacheTradingBases);
             panel19.Controls.Add(label20);
-            panel19.Controls.Add(LabelBinanceDatabaseAllPairs);
+            panel19.Controls.Add(binanceOldCacheAllPairs);
             panel19.Controls.Add(label14);
-            panel19.Controls.Add(LabelBinanceDatabaseTradingPairs);
+            panel19.Controls.Add(binanceOldCacheTradingPairs);
             panel19.Controls.Add(label9);
             panel19.Dock = DockStyle.Top;
             panel19.Location = new Point(3, 144);
@@ -2809,18 +2811,18 @@
             panel19.Size = new Size(514, 20);
             panel19.TabIndex = 109;
             // 
-            // LabelBinanceDatabaseTradingQuotes
+            // binanceOldCacheTradingQuotes
             // 
-            LabelBinanceDatabaseTradingQuotes.Dock = DockStyle.Left;
-            LabelBinanceDatabaseTradingQuotes.ForeColor = SystemColors.ControlText;
-            LabelBinanceDatabaseTradingQuotes.Location = new Point(477, 3);
-            LabelBinanceDatabaseTradingQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceDatabaseTradingQuotes.Name = "LabelBinanceDatabaseTradingQuotes";
-            LabelBinanceDatabaseTradingQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceDatabaseTradingQuotes.Size = new Size(38, 14);
-            LabelBinanceDatabaseTradingQuotes.TabIndex = 114;
-            LabelBinanceDatabaseTradingQuotes.Text = "0";
-            LabelBinanceDatabaseTradingQuotes.TextAlign = ContentAlignment.TopRight;
+            binanceOldCacheTradingQuotes.Dock = DockStyle.Left;
+            binanceOldCacheTradingQuotes.ForeColor = SystemColors.ControlText;
+            binanceOldCacheTradingQuotes.Location = new Point(477, 3);
+            binanceOldCacheTradingQuotes.Margin = new Padding(4, 0, 4, 0);
+            binanceOldCacheTradingQuotes.Name = "binanceOldCacheTradingQuotes";
+            binanceOldCacheTradingQuotes.Padding = new Padding(0, 0, 3, 0);
+            binanceOldCacheTradingQuotes.Size = new Size(38, 14);
+            binanceOldCacheTradingQuotes.TabIndex = 114;
+            binanceOldCacheTradingQuotes.Text = "0";
+            binanceOldCacheTradingQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label28
             // 
@@ -2831,18 +2833,18 @@
             label28.TabIndex = 113;
             label28.Text = "Trading Quotes:";
             // 
-            // LabelBinanceDatabaseTradingBases
+            // binanceOldCacheTradingBases
             // 
-            LabelBinanceDatabaseTradingBases.Dock = DockStyle.Left;
-            LabelBinanceDatabaseTradingBases.ForeColor = SystemColors.ControlText;
-            LabelBinanceDatabaseTradingBases.Location = new Point(341, 3);
-            LabelBinanceDatabaseTradingBases.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceDatabaseTradingBases.Name = "LabelBinanceDatabaseTradingBases";
-            LabelBinanceDatabaseTradingBases.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceDatabaseTradingBases.Size = new Size(38, 14);
-            LabelBinanceDatabaseTradingBases.TabIndex = 112;
-            LabelBinanceDatabaseTradingBases.Text = "0";
-            LabelBinanceDatabaseTradingBases.TextAlign = ContentAlignment.TopRight;
+            binanceOldCacheTradingBases.Dock = DockStyle.Left;
+            binanceOldCacheTradingBases.ForeColor = SystemColors.ControlText;
+            binanceOldCacheTradingBases.Location = new Point(341, 3);
+            binanceOldCacheTradingBases.Margin = new Padding(4, 0, 4, 0);
+            binanceOldCacheTradingBases.Name = "binanceOldCacheTradingBases";
+            binanceOldCacheTradingBases.Padding = new Padding(0, 0, 3, 0);
+            binanceOldCacheTradingBases.Size = new Size(38, 14);
+            binanceOldCacheTradingBases.TabIndex = 112;
+            binanceOldCacheTradingBases.Text = "0";
+            binanceOldCacheTradingBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label20
             // 
@@ -2853,17 +2855,17 @@
             label20.TabIndex = 111;
             label20.Text = "Trading Symbols:";
             // 
-            // LabelBinanceDatabaseAllPairs
+            // binanceOldCacheAllPairs
             // 
-            LabelBinanceDatabaseAllPairs.Dock = DockStyle.Left;
-            LabelBinanceDatabaseAllPairs.Location = new Point(195, 3);
-            LabelBinanceDatabaseAllPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceDatabaseAllPairs.Name = "LabelBinanceDatabaseAllPairs";
-            LabelBinanceDatabaseAllPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceDatabaseAllPairs.Size = new Size(38, 14);
-            LabelBinanceDatabaseAllPairs.TabIndex = 110;
-            LabelBinanceDatabaseAllPairs.Text = "0";
-            LabelBinanceDatabaseAllPairs.TextAlign = ContentAlignment.TopRight;
+            binanceOldCacheAllPairs.Dock = DockStyle.Left;
+            binanceOldCacheAllPairs.Location = new Point(195, 3);
+            binanceOldCacheAllPairs.Margin = new Padding(4, 0, 4, 0);
+            binanceOldCacheAllPairs.Name = "binanceOldCacheAllPairs";
+            binanceOldCacheAllPairs.Padding = new Padding(0, 0, 3, 0);
+            binanceOldCacheAllPairs.Size = new Size(38, 14);
+            binanceOldCacheAllPairs.TabIndex = 110;
+            binanceOldCacheAllPairs.Text = "0";
+            binanceOldCacheAllPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label14
             // 
@@ -2874,17 +2876,17 @@
             label14.TabIndex = 109;
             label14.Text = "All pairs:";
             // 
-            // LabelBinanceDatabaseTradingPairs
+            // binanceOldCacheTradingPairs
             // 
-            LabelBinanceDatabaseTradingPairs.Dock = DockStyle.Left;
-            LabelBinanceDatabaseTradingPairs.Location = new Point(89, 3);
-            LabelBinanceDatabaseTradingPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceDatabaseTradingPairs.Name = "LabelBinanceDatabaseTradingPairs";
-            LabelBinanceDatabaseTradingPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceDatabaseTradingPairs.Size = new Size(38, 14);
-            LabelBinanceDatabaseTradingPairs.TabIndex = 108;
-            LabelBinanceDatabaseTradingPairs.Text = "0";
-            LabelBinanceDatabaseTradingPairs.TextAlign = ContentAlignment.TopRight;
+            binanceOldCacheTradingPairs.Dock = DockStyle.Left;
+            binanceOldCacheTradingPairs.Location = new Point(89, 3);
+            binanceOldCacheTradingPairs.Margin = new Padding(4, 0, 4, 0);
+            binanceOldCacheTradingPairs.Name = "binanceOldCacheTradingPairs";
+            binanceOldCacheTradingPairs.Padding = new Padding(0, 0, 3, 0);
+            binanceOldCacheTradingPairs.Size = new Size(38, 14);
+            binanceOldCacheTradingPairs.TabIndex = 108;
+            binanceOldCacheTradingPairs.Text = "0";
+            binanceOldCacheTradingPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label9
             // 
@@ -3027,13 +3029,13 @@
             // 
             // panel15
             // 
-            panel15.Controls.Add(LabelBinanceExchangeHaltedQuotes);
+            panel15.Controls.Add(binanceNewCacheHaltedQuotes);
             panel15.Controls.Add(label44);
-            panel15.Controls.Add(LabelBinanceExchangeHaltedBases);
+            panel15.Controls.Add(binanceNewCacheHaltedBases);
             panel15.Controls.Add(label6);
-            panel15.Controls.Add(LabelBinanceExchangeNewPairs);
+            panel15.Controls.Add(binanceNewPairs);
             panel15.Controls.Add(label10);
-            panel15.Controls.Add(LabelBinanceExchangeHaltedPairs);
+            panel15.Controls.Add(binanceNewCacheHaltedPairs);
             panel15.Controls.Add(label5);
             panel15.Dock = DockStyle.Top;
             panel15.Location = new Point(3, 57);
@@ -3042,18 +3044,18 @@
             panel15.Size = new Size(514, 20);
             panel15.TabIndex = 105;
             // 
-            // LabelBinanceExchangeHaltedQuotes
+            // binanceNewCacheHaltedQuotes
             // 
-            LabelBinanceExchangeHaltedQuotes.Dock = DockStyle.Left;
-            LabelBinanceExchangeHaltedQuotes.ForeColor = SystemColors.ControlText;
-            LabelBinanceExchangeHaltedQuotes.Location = new Point(477, 3);
-            LabelBinanceExchangeHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceExchangeHaltedQuotes.Name = "LabelBinanceExchangeHaltedQuotes";
-            LabelBinanceExchangeHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceExchangeHaltedQuotes.Size = new Size(38, 14);
-            LabelBinanceExchangeHaltedQuotes.TabIndex = 96;
-            LabelBinanceExchangeHaltedQuotes.Text = "0";
-            LabelBinanceExchangeHaltedQuotes.TextAlign = ContentAlignment.TopRight;
+            binanceNewCacheHaltedQuotes.Dock = DockStyle.Left;
+            binanceNewCacheHaltedQuotes.ForeColor = SystemColors.ControlText;
+            binanceNewCacheHaltedQuotes.Location = new Point(477, 3);
+            binanceNewCacheHaltedQuotes.Margin = new Padding(4, 0, 4, 0);
+            binanceNewCacheHaltedQuotes.Name = "binanceNewCacheHaltedQuotes";
+            binanceNewCacheHaltedQuotes.Padding = new Padding(0, 0, 3, 0);
+            binanceNewCacheHaltedQuotes.Size = new Size(38, 14);
+            binanceNewCacheHaltedQuotes.TabIndex = 96;
+            binanceNewCacheHaltedQuotes.Text = "0";
+            binanceNewCacheHaltedQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label44
             // 
@@ -3064,18 +3066,18 @@
             label44.TabIndex = 95;
             label44.Text = "Halted Quotes:";
             // 
-            // LabelBinanceExchangeHaltedBases
+            // binanceNewCacheHaltedBases
             // 
-            LabelBinanceExchangeHaltedBases.Dock = DockStyle.Left;
-            LabelBinanceExchangeHaltedBases.ForeColor = SystemColors.ControlText;
-            LabelBinanceExchangeHaltedBases.Location = new Point(341, 3);
-            LabelBinanceExchangeHaltedBases.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceExchangeHaltedBases.Name = "LabelBinanceExchangeHaltedBases";
-            LabelBinanceExchangeHaltedBases.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceExchangeHaltedBases.Size = new Size(38, 14);
-            LabelBinanceExchangeHaltedBases.TabIndex = 94;
-            LabelBinanceExchangeHaltedBases.Text = "0";
-            LabelBinanceExchangeHaltedBases.TextAlign = ContentAlignment.TopRight;
+            binanceNewCacheHaltedBases.Dock = DockStyle.Left;
+            binanceNewCacheHaltedBases.ForeColor = SystemColors.ControlText;
+            binanceNewCacheHaltedBases.Location = new Point(341, 3);
+            binanceNewCacheHaltedBases.Margin = new Padding(4, 0, 4, 0);
+            binanceNewCacheHaltedBases.Name = "binanceNewCacheHaltedBases";
+            binanceNewCacheHaltedBases.Padding = new Padding(0, 0, 3, 0);
+            binanceNewCacheHaltedBases.Size = new Size(38, 14);
+            binanceNewCacheHaltedBases.TabIndex = 94;
+            binanceNewCacheHaltedBases.Text = "0";
+            binanceNewCacheHaltedBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label6
             // 
@@ -3086,18 +3088,18 @@
             label6.TabIndex = 93;
             label6.Text = "Halted Symbols:";
             // 
-            // LabelBinanceExchangeNewPairs
+            // binanceNewPairs
             // 
-            LabelBinanceExchangeNewPairs.Dock = DockStyle.Left;
-            LabelBinanceExchangeNewPairs.ForeColor = SystemColors.ControlText;
-            LabelBinanceExchangeNewPairs.Location = new Point(195, 3);
-            LabelBinanceExchangeNewPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceExchangeNewPairs.Name = "LabelBinanceExchangeNewPairs";
-            LabelBinanceExchangeNewPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceExchangeNewPairs.Size = new Size(38, 14);
-            LabelBinanceExchangeNewPairs.TabIndex = 92;
-            LabelBinanceExchangeNewPairs.Text = "0";
-            LabelBinanceExchangeNewPairs.TextAlign = ContentAlignment.TopRight;
+            binanceNewPairs.Dock = DockStyle.Left;
+            binanceNewPairs.ForeColor = SystemColors.ControlText;
+            binanceNewPairs.Location = new Point(195, 3);
+            binanceNewPairs.Margin = new Padding(4, 0, 4, 0);
+            binanceNewPairs.Name = "binanceNewPairs";
+            binanceNewPairs.Padding = new Padding(0, 0, 3, 0);
+            binanceNewPairs.Size = new Size(38, 14);
+            binanceNewPairs.TabIndex = 92;
+            binanceNewPairs.Text = "0";
+            binanceNewPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label10
             // 
@@ -3108,18 +3110,18 @@
             label10.TabIndex = 91;
             label10.Text = "New pairs:";
             // 
-            // LabelBinanceExchangeHaltedPairs
+            // binanceNewCacheHaltedPairs
             // 
-            LabelBinanceExchangeHaltedPairs.Dock = DockStyle.Left;
-            LabelBinanceExchangeHaltedPairs.ForeColor = SystemColors.ControlText;
-            LabelBinanceExchangeHaltedPairs.Location = new Point(89, 3);
-            LabelBinanceExchangeHaltedPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceExchangeHaltedPairs.Name = "LabelBinanceExchangeHaltedPairs";
-            LabelBinanceExchangeHaltedPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceExchangeHaltedPairs.Size = new Size(38, 14);
-            LabelBinanceExchangeHaltedPairs.TabIndex = 90;
-            LabelBinanceExchangeHaltedPairs.Text = "0";
-            LabelBinanceExchangeHaltedPairs.TextAlign = ContentAlignment.TopRight;
+            binanceNewCacheHaltedPairs.Dock = DockStyle.Left;
+            binanceNewCacheHaltedPairs.ForeColor = SystemColors.ControlText;
+            binanceNewCacheHaltedPairs.Location = new Point(89, 3);
+            binanceNewCacheHaltedPairs.Margin = new Padding(4, 0, 4, 0);
+            binanceNewCacheHaltedPairs.Name = "binanceNewCacheHaltedPairs";
+            binanceNewCacheHaltedPairs.Padding = new Padding(0, 0, 3, 0);
+            binanceNewCacheHaltedPairs.Size = new Size(38, 14);
+            binanceNewCacheHaltedPairs.TabIndex = 90;
+            binanceNewCacheHaltedPairs.Text = "0";
+            binanceNewCacheHaltedPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label5
             // 
@@ -3132,13 +3134,13 @@
             // 
             // panel14
             // 
-            panel14.Controls.Add(LabelBinanceExchangeTradingQuotes);
+            panel14.Controls.Add(binanceNewCacheTradingQuotes);
             panel14.Controls.Add(label45);
-            panel14.Controls.Add(LabelBinanceExchangeTradingBases);
+            panel14.Controls.Add(binanceNewCacheTradingBases);
             panel14.Controls.Add(label7);
-            panel14.Controls.Add(LabelBinanceExchangeAllPairs);
+            panel14.Controls.Add(binanceNewCacheAllPairs);
             panel14.Controls.Add(label11);
-            panel14.Controls.Add(LabelBinanceExchangeTradingPairs);
+            panel14.Controls.Add(binanceNewCacheTradingPairs);
             panel14.Controls.Add(label4);
             panel14.Dock = DockStyle.Top;
             panel14.Location = new Point(3, 37);
@@ -3147,18 +3149,18 @@
             panel14.Size = new Size(514, 20);
             panel14.TabIndex = 104;
             // 
-            // LabelBinanceExchangeTradingQuotes
+            // binanceNewCacheTradingQuotes
             // 
-            LabelBinanceExchangeTradingQuotes.Dock = DockStyle.Left;
-            LabelBinanceExchangeTradingQuotes.ForeColor = SystemColors.ControlText;
-            LabelBinanceExchangeTradingQuotes.Location = new Point(477, 3);
-            LabelBinanceExchangeTradingQuotes.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceExchangeTradingQuotes.Name = "LabelBinanceExchangeTradingQuotes";
-            LabelBinanceExchangeTradingQuotes.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceExchangeTradingQuotes.Size = new Size(38, 14);
-            LabelBinanceExchangeTradingQuotes.TabIndex = 95;
-            LabelBinanceExchangeTradingQuotes.Text = "0";
-            LabelBinanceExchangeTradingQuotes.TextAlign = ContentAlignment.TopRight;
+            binanceNewCacheTradingQuotes.Dock = DockStyle.Left;
+            binanceNewCacheTradingQuotes.ForeColor = SystemColors.ControlText;
+            binanceNewCacheTradingQuotes.Location = new Point(477, 3);
+            binanceNewCacheTradingQuotes.Margin = new Padding(4, 0, 4, 0);
+            binanceNewCacheTradingQuotes.Name = "binanceNewCacheTradingQuotes";
+            binanceNewCacheTradingQuotes.Padding = new Padding(0, 0, 3, 0);
+            binanceNewCacheTradingQuotes.Size = new Size(38, 14);
+            binanceNewCacheTradingQuotes.TabIndex = 95;
+            binanceNewCacheTradingQuotes.Text = "0";
+            binanceNewCacheTradingQuotes.TextAlign = ContentAlignment.TopRight;
             // 
             // label45
             // 
@@ -3169,18 +3171,18 @@
             label45.TabIndex = 94;
             label45.Text = "Trading Quotes:";
             // 
-            // LabelBinanceExchangeTradingBases
+            // binanceNewCacheTradingBases
             // 
-            LabelBinanceExchangeTradingBases.Dock = DockStyle.Left;
-            LabelBinanceExchangeTradingBases.ForeColor = SystemColors.ControlText;
-            LabelBinanceExchangeTradingBases.Location = new Point(341, 3);
-            LabelBinanceExchangeTradingBases.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceExchangeTradingBases.Name = "LabelBinanceExchangeTradingBases";
-            LabelBinanceExchangeTradingBases.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceExchangeTradingBases.Size = new Size(38, 14);
-            LabelBinanceExchangeTradingBases.TabIndex = 93;
-            LabelBinanceExchangeTradingBases.Text = "0";
-            LabelBinanceExchangeTradingBases.TextAlign = ContentAlignment.TopRight;
+            binanceNewCacheTradingBases.Dock = DockStyle.Left;
+            binanceNewCacheTradingBases.ForeColor = SystemColors.ControlText;
+            binanceNewCacheTradingBases.Location = new Point(341, 3);
+            binanceNewCacheTradingBases.Margin = new Padding(4, 0, 4, 0);
+            binanceNewCacheTradingBases.Name = "binanceNewCacheTradingBases";
+            binanceNewCacheTradingBases.Padding = new Padding(0, 0, 3, 0);
+            binanceNewCacheTradingBases.Size = new Size(38, 14);
+            binanceNewCacheTradingBases.TabIndex = 93;
+            binanceNewCacheTradingBases.Text = "0";
+            binanceNewCacheTradingBases.TextAlign = ContentAlignment.TopRight;
             // 
             // label7
             // 
@@ -3191,18 +3193,18 @@
             label7.TabIndex = 92;
             label7.Text = "Trading Symbols:";
             // 
-            // LabelBinanceExchangeAllPairs
+            // binanceNewCacheAllPairs
             // 
-            LabelBinanceExchangeAllPairs.Dock = DockStyle.Left;
-            LabelBinanceExchangeAllPairs.ForeColor = SystemColors.ControlText;
-            LabelBinanceExchangeAllPairs.Location = new Point(195, 3);
-            LabelBinanceExchangeAllPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceExchangeAllPairs.Name = "LabelBinanceExchangeAllPairs";
-            LabelBinanceExchangeAllPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceExchangeAllPairs.Size = new Size(38, 14);
-            LabelBinanceExchangeAllPairs.TabIndex = 91;
-            LabelBinanceExchangeAllPairs.Text = "0";
-            LabelBinanceExchangeAllPairs.TextAlign = ContentAlignment.TopRight;
+            binanceNewCacheAllPairs.Dock = DockStyle.Left;
+            binanceNewCacheAllPairs.ForeColor = SystemColors.ControlText;
+            binanceNewCacheAllPairs.Location = new Point(195, 3);
+            binanceNewCacheAllPairs.Margin = new Padding(4, 0, 4, 0);
+            binanceNewCacheAllPairs.Name = "binanceNewCacheAllPairs";
+            binanceNewCacheAllPairs.Padding = new Padding(0, 0, 3, 0);
+            binanceNewCacheAllPairs.Size = new Size(38, 14);
+            binanceNewCacheAllPairs.TabIndex = 91;
+            binanceNewCacheAllPairs.Text = "0";
+            binanceNewCacheAllPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label11
             // 
@@ -3213,18 +3215,18 @@
             label11.TabIndex = 90;
             label11.Text = "All pairs:";
             // 
-            // LabelBinanceExchangeTradingPairs
+            // binanceNewCacheTradingPairs
             // 
-            LabelBinanceExchangeTradingPairs.Dock = DockStyle.Left;
-            LabelBinanceExchangeTradingPairs.ForeColor = SystemColors.ControlText;
-            LabelBinanceExchangeTradingPairs.Location = new Point(89, 3);
-            LabelBinanceExchangeTradingPairs.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceExchangeTradingPairs.Name = "LabelBinanceExchangeTradingPairs";
-            LabelBinanceExchangeTradingPairs.Padding = new Padding(0, 0, 3, 0);
-            LabelBinanceExchangeTradingPairs.Size = new Size(38, 14);
-            LabelBinanceExchangeTradingPairs.TabIndex = 89;
-            LabelBinanceExchangeTradingPairs.Text = "0";
-            LabelBinanceExchangeTradingPairs.TextAlign = ContentAlignment.TopRight;
+            binanceNewCacheTradingPairs.Dock = DockStyle.Left;
+            binanceNewCacheTradingPairs.ForeColor = SystemColors.ControlText;
+            binanceNewCacheTradingPairs.Location = new Point(89, 3);
+            binanceNewCacheTradingPairs.Margin = new Padding(4, 0, 4, 0);
+            binanceNewCacheTradingPairs.Name = "binanceNewCacheTradingPairs";
+            binanceNewCacheTradingPairs.Padding = new Padding(0, 0, 3, 0);
+            binanceNewCacheTradingPairs.Size = new Size(38, 14);
+            binanceNewCacheTradingPairs.TabIndex = 89;
+            binanceNewCacheTradingPairs.Text = "0";
+            binanceNewCacheTradingPairs.TextAlign = ContentAlignment.TopRight;
             // 
             // label4
             // 
@@ -3237,7 +3239,7 @@
             // 
             // panel13
             // 
-            panel13.Controls.Add(LabelBinanceExchangeStatus);
+            panel13.Controls.Add(LabelbinanceExchangeStatus);
             panel13.Controls.Add(label1);
             panel13.Dock = DockStyle.Top;
             panel13.Location = new Point(3, 17);
@@ -3246,19 +3248,19 @@
             panel13.Size = new Size(514, 20);
             panel13.TabIndex = 103;
             // 
-            // LabelBinanceExchangeStatus
+            // LabelbinanceExchangeStatus
             // 
-            LabelBinanceExchangeStatus.AutoSize = true;
-            LabelBinanceExchangeStatus.Dock = DockStyle.Left;
-            LabelBinanceExchangeStatus.Font = new Font("Verdana", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LabelBinanceExchangeStatus.ForeColor = SystemColors.ControlText;
-            LabelBinanceExchangeStatus.Location = new Point(63, 3);
-            LabelBinanceExchangeStatus.Margin = new Padding(4, 0, 4, 0);
-            LabelBinanceExchangeStatus.Name = "LabelBinanceExchangeStatus";
-            LabelBinanceExchangeStatus.Padding = new Padding(0, 0, 5, 0);
-            LabelBinanceExchangeStatus.Size = new Size(53, 13);
-            LabelBinanceExchangeStatus.TabIndex = 103;
-            LabelBinanceExchangeStatus.Text = "Online";
+            LabelbinanceExchangeStatus.AutoSize = true;
+            LabelbinanceExchangeStatus.Dock = DockStyle.Left;
+            LabelbinanceExchangeStatus.Font = new Font("Verdana", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LabelbinanceExchangeStatus.ForeColor = SystemColors.ControlText;
+            LabelbinanceExchangeStatus.Location = new Point(63, 3);
+            LabelbinanceExchangeStatus.Margin = new Padding(4, 0, 4, 0);
+            LabelbinanceExchangeStatus.Name = "LabelbinanceExchangeStatus";
+            LabelbinanceExchangeStatus.Padding = new Padding(0, 0, 5, 0);
+            LabelbinanceExchangeStatus.Size = new Size(55, 13);
+            LabelbinanceExchangeStatus.TabIndex = 103;
+            LabelbinanceExchangeStatus.Text = "Offline";
             // 
             // label1
             // 
@@ -3268,6 +3270,12 @@
             label1.Size = new Size(60, 14);
             label1.TabIndex = 102;
             label1.Text = "Status:";
+            // 
+            // _connectionCheck
+            // 
+            _connectionCheck.Enabled = true;
+            _connectionCheck.Interval = 1350;
+            _connectionCheck.Tick += _connectionCheck_Tick;
             // 
             // MainAppForm
             // 
@@ -3294,7 +3302,7 @@
             Statusbar.ResumeLayout(false);
             PanelBottom.ResumeLayout(false);
             panelConsole.ResumeLayout(false);
-            groupBox5.ResumeLayout(false);
+            groupBoxConsole.ResumeLayout(false);
             MainAppPanel.ResumeLayout(false);
             panel6.ResumeLayout(false);
             PanelOrderCreate.ResumeLayout(false);
@@ -3403,7 +3411,7 @@
         private System.Windows.Forms.Panel Statusbar;
         private System.Windows.Forms.Panel PanelBottom;
         private System.Windows.Forms.Panel panelConsole;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBoxConsole;
         private System.Windows.Forms.RichTextBox logBox;
         private System.Windows.Forms.Panel MainAppPanel;
         private System.Windows.Forms.Panel panel6;
@@ -3474,20 +3482,20 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Panel panel36;
-        private System.Windows.Forms.Label LabelCoinbaseDatabaseHaltedQuotes;
+        private System.Windows.Forms.Label coinbaseOldCacheHaltedQuotes;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label LabelCoinbaseDatabaseHaltedBases;
+        private System.Windows.Forms.Label coinbaseOldCacheHaltedBases;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label LabelCoinbaseHaltedPairs;
+        private System.Windows.Forms.Label coinbaseOldCacheHaltedPairs;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.Label LabelCoinbaseDatabaseTradingQuotes;
+        private System.Windows.Forms.Label coinbaseOldCacheTradingQuotes;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label LabelCoinbaseDatabaseTradingBases;
+        private System.Windows.Forms.Label coinbaseOldCacheTradingBases;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label LabelCoinbaseAllPairs;
+        private System.Windows.Forms.Label coinbaseOldCacheAllPairs;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label LabelCoinbaseTradingPairs;
+        private System.Windows.Forms.Label coinbaseOldCacheTradingPairs;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Panel panel34;
         private System.Windows.Forms.Label label54;
@@ -3501,43 +3509,43 @@
         private System.Windows.Forms.ComboBox DropdownCoinbaseNewpairs;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.Label LabelCoinbaseExchangeHaltedQuotes;
+        private System.Windows.Forms.Label coinbaseNewCacheHaltedQuotes;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label LabeCoinbaseExchangeHaltedBases;
+        private System.Windows.Forms.Label coinbaseNewCacheHaltedBases;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label LabelCoinbaseExchangeNewPairs;
+        private System.Windows.Forms.Label coinbaseNewPairs;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label LabelCoinbaseExchangeHaltedPairs;
+        private System.Windows.Forms.Label coinbaseNewCacheHaltedPairs;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.Label LabelCoinbaseExchangeTradingQuotes;
+        private System.Windows.Forms.Label coinbaseNewCacheTradingQuotes;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label LabelCoinbaseExchangeTradingBases;
+        private System.Windows.Forms.Label coinbaseNewCacheTradingBases;
         private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label LabelCoinbaseExchangeAllPairs;
+        private System.Windows.Forms.Label coinbaseNewCacheAllPairs;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label LabelCoinbaseExchangeTradingPairs;
+        private System.Windows.Forms.Label coinbaseNewCacheTradingPairs;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Label LabelCoinbaseExchangeStatus;
+        private System.Windows.Forms.Label LabelcoinbaseExchangeStatus;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Label LabelBybitDatabaseHaltedQuotes;
+        private System.Windows.Forms.Label bybitOldCacheHaltedQuotes;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label LabelBybitDatabaseHaltedBases;
+        private System.Windows.Forms.Label bybitOldCacheHaltedBases;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label LabelBybitDatabaseHaltedPairs;
+        private System.Windows.Forms.Label bybitOldCacheHaltedPairs;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.Label LabelBybitDatabaseTradingQuotes;
+        private System.Windows.Forms.Label bybitOldCacheTradingQuotes;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label LabelBybitDatabaseTradingBases;
+        private System.Windows.Forms.Label bybitOldCacheTradingBases;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label LabelBybitDatabaseAllPairs;
+        private System.Windows.Forms.Label bybitOldCacheAllPairs;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label LabelBybitDatabaseTradingPairs;
+        private System.Windows.Forms.Label bybitOldCacheTradingPairs;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Label label31;
@@ -3551,43 +3559,43 @@
         private System.Windows.Forms.ComboBox DropdownBybitNewpairs;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Label LabelBybitExchangeHaltedQuotes;
+        private System.Windows.Forms.Label bybitNewCacheHaltedQuotes;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label LabeBybitExchangeHaltedBases;
+        private System.Windows.Forms.Label bybitNewCacheHaltedBases;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label LabelBybitExchangeNewPairs;
+        private System.Windows.Forms.Label bybitNewPairs;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label LabelBybitExchangeHaltedPairs;
+        private System.Windows.Forms.Label bybitNewCacheHaltedPairs;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Label LabelBybitExchangeTradingQuotes;
+        private System.Windows.Forms.Label bybitNewCacheTradingQuotes;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label LabelBybitExchangeTradingBases;
+        private System.Windows.Forms.Label bybitNewCacheTradingBases;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label LabelBybitExchangeAllPairs;
+        private System.Windows.Forms.Label bybitNewCacheAllPairs;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label LabelBybitExchangeTradingPairs;
+        private System.Windows.Forms.Label bybitNewCacheTradingPairs;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label LabelBybitExchangeStatus;
+        private System.Windows.Forms.Label LabelbybitExchangeStatus;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Label LabelBinanceDatabaseHaltedQuotes;
+        private System.Windows.Forms.Label binanceOldCacheHaltedQuotes;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label LabelBinanceDatabaseHaltedBases;
+        private System.Windows.Forms.Label binanceOldCacheHaltedBases;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label LabelBinanceDatabaseHaltedPairs;
+        private System.Windows.Forms.Label binanceOldCacheHaltedPairs;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Label LabelBinanceDatabaseTradingQuotes;
+        private System.Windows.Forms.Label binanceOldCacheTradingQuotes;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label LabelBinanceDatabaseTradingBases;
+        private System.Windows.Forms.Label binanceOldCacheTradingBases;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label LabelBinanceDatabaseAllPairs;
+        private System.Windows.Forms.Label binanceOldCacheAllPairs;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label LabelBinanceDatabaseTradingPairs;
+        private System.Windows.Forms.Label binanceOldCacheTradingPairs;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label13;
@@ -3601,25 +3609,25 @@
         private System.Windows.Forms.ComboBox DropdownBinanceNewpairs;
         private System.Windows.Forms.Label LabelNewPairBinance;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label LabelBinanceExchangeHaltedQuotes;
+        private System.Windows.Forms.Label binanceNewCacheHaltedQuotes;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label LabelBinanceExchangeHaltedBases;
+        private System.Windows.Forms.Label binanceNewCacheHaltedBases;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label LabelBinanceExchangeNewPairs;
+        private System.Windows.Forms.Label binanceNewPairs;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label LabelBinanceExchangeHaltedPairs;
+        private System.Windows.Forms.Label binanceNewCacheHaltedPairs;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label LabelBinanceExchangeTradingQuotes;
+        private System.Windows.Forms.Label binanceNewCacheTradingQuotes;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label LabelBinanceExchangeTradingBases;
+        private System.Windows.Forms.Label binanceNewCacheTradingBases;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label LabelBinanceExchangeAllPairs;
+        private System.Windows.Forms.Label binanceNewCacheAllPairs;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label LabelBinanceExchangeTradingPairs;
+        private System.Windows.Forms.Label binanceNewCacheTradingPairs;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label LabelBinanceExchangeStatus;
+        private System.Windows.Forms.Label LabelbinanceExchangeStatus;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnBaseAsset;
@@ -3632,5 +3640,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnExecutions;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReEnter;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnExchanges;
+        private System.Windows.Forms.Timer _connectionCheck;
     }
 }

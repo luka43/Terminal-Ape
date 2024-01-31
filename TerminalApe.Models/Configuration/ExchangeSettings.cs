@@ -9,14 +9,15 @@ namespace TerminalApe.Models.Configuration;
 
 public class ExchangeSettings
 {
-        public string APIKey { get; set; }
-        public string SECRETKey { get; set; }
-        public int TIMEOUT { get; set; }
-        public string APIUrlBase { get; set; }
-        public string APIUrlPing { get; set; }
-        public string APIUrlPairs { get; set; }
-        public string APIUrlOrder { get; set; }
-    
+
+    public string APIKey { get; set; }
+    public string SECRETKey { get; set; }
+    public int TIMEOUT { get; set; }
+    public string APIUrlBase { get; set; }
+    public string APIUrlPing { get; set; }
+    public string APIUrlPairs { get; set; }
+    public string APIUrlOrder { get; set; }
+
 
     public Dictionary<string, ExchangeSettings> Default() 
     {

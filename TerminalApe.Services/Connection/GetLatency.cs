@@ -5,22 +5,42 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TerminalApe.Services.Internet;
+namespace TerminalApe.Services.Connection;
 
-internal class GetLatency
-{    public async Task<long> GoogleDNS()
+public class GetLatency
+{
+
+    Ping ping = new Ping();
+
+    public async Task<long> GoogleDNS()
     {
         try
         {
             // Ping a well-known and stable server, such as Google's public DNS server (8.8.8.8)
-            Ping ping = new Ping();
+
             PingReply reply = ping.Send("8.8.8.8", 1000);
 
             return reply.RoundtripTime;
         }
         catch (PingException)
         {
-            return 9999;
+            return 999;
+        }
+    }
+    public async Task<long> ExchangeAPI(string exchange)
+    {
+
+        try
+        {
+            // Ping a well-known and stable server, such as Google's public DNS server (8.8.8.8)
+
+            PingReply reply = ping.Send($"api.{ exchange }.com", 1000);
+
+            return reply.RoundtripTime;
+        }
+        catch (PingException)
+        {
+            return 999;
         }
     }
 }

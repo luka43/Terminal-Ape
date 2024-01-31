@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TerminalApe.DAL\TerminalApe.DAL.csproj" />
     <ProjectReference Include="..\TerminalApe.Models\TerminalApe.Models.csproj" />
     <ProjectReference Include="..\TerminalApe.Services\TerminalApe.Services.csproj" />
   </ItemGroup>
