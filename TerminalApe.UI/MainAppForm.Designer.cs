@@ -29,7 +29,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
@@ -290,7 +289,6 @@
             panel13 = new Panel();
             LabelbinanceExchangeStatus = new Label();
             label1 = new Label();
-            _connectionCheck = new System.Windows.Forms.Timer(components);
             menuStrip1.SuspendLayout();
             panel12.SuspendLayout();
             Statusbar.SuspendLayout();
@@ -3271,12 +3269,6 @@
             label1.TabIndex = 102;
             label1.Text = "Status:";
             // 
-            // _connectionCheck
-            // 
-            _connectionCheck.Enabled = true;
-            _connectionCheck.Interval = 1350;
-            _connectionCheck.Tick += _connectionCheck_Tick;
-            // 
             // MainAppForm
             // 
             AutoScaleDimensions = new SizeF(7F, 13F);
@@ -3640,6 +3632,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnExecutions;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReEnter;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnExchanges;
-        private System.Windows.Forms.Timer _connectionCheck;
     }
 }
