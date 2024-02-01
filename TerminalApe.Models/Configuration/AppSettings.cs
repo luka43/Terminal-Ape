@@ -29,8 +29,7 @@ public class AppSettings
         {
             Exchanges = { "binance", "bybit", "coinbase" },
             DatabaseDirectory = "db",
-            DatabaseFile = "marketdata.json",
-            DatabaseFilePath = "",
+            DatabaseFile = "oldMarketCache.json",
             LogAutosaveInterval = 5,
             LogMaxEntriesBeforeReset = 10000,
             LogDirectory = "log",

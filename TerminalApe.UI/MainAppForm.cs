@@ -9,12 +9,14 @@ using TerminalApe.Services.Connection;
 using TerminalApe.Services.Exchanges;
 using TerminalApe.UI.Properties;
 using TerminalApe.UI.Services;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace TerminalApe.UI
 {
     public partial class MainAppForm : Form
     {
         private Timers _timer;
+
         private UpdateUi UpdateUi { get; set; }
         private Logger logger;
         private FileDatabase fileDatabase;
@@ -50,6 +52,7 @@ namespace TerminalApe.UI
             LoadMarketDatabase();
         }
 
+        #region Initialize methods
         private void InitializeLogger()
         {
             logger = new Logger(this);
@@ -59,13 +62,12 @@ namespace TerminalApe.UI
             AppTrayIcon.Icon = Properties.Resources.logodisabled;
             AppTrayIcon.Text = "TerminalApe v1.0";
             AppTrayIcon.Visible = false;
-            AppTrayIcon.ContextMenuStrip = CreateTrayContextMenu();
+            AppTrayIcon.ContextMenuStrip = InitializeTrayContextMenu();
             AppTrayIcon.MouseDoubleClick += TrayIcon_DoubleClick;
         }
-        private ContextMenuStrip CreateTrayContextMenu()
-        {
+        private ContextMenuStrip InitializeTrayContextMenu()
+        {            
             ContextMenuStrip contextMenu = new ContextMenuStrip();
-
             contextMenu.Items.Add("Open", null, TrayIconOpenMenu_Click);
             contextMenu.Items.Add(new ToolStripSeparator());
             contextMenu.Items.Add("Start", null, TrayIconOpenMenu_Click);
@@ -106,7 +108,7 @@ namespace TerminalApe.UI
             {
                 logger.Log($"Loading {char.ToUpper(exchange[0]) + exchange.Substring(1)} pairs and symbols...");
 
-                marketCacheOld.Add(exchange, fileDatabase.LoadExchangeCache("marketCacheOld.json", exchange));
+                marketCacheOld.Add(exchange, fileDatabase.LoadExchangeCache(exchange, Path.Combine(appSettings.DatabaseDirectory, appSettings.DatabaseFile)));
 
                 logger.Log($"Found {marketCacheOld[exchange].AllPairs.Count} pairs in {char.ToUpper(exchange[0]) + exchange.Substring(1)} database.");
                 logger.Log($"{char.ToUpper(exchange[0]) + exchange.Substring(1)} pairs and symbols added.");
@@ -122,18 +124,18 @@ namespace TerminalApe.UI
         private async void GetUpdate(string exchange)
         {
             logger.Log($"Getting new {char.ToUpper(exchange[0]) + exchange.Substring(1)} pairs and symbols...");
-
+            marketCacheRaw.Remove(exchange);
             marketCacheRaw.Add(exchange, await pairService.GetPairs(exchange));
 
             logger.Log("Done.");
             logger.Log($"Sorting new {char.ToUpper(exchange[0]) + exchange.Substring(1)} pairs and symbols...");
-
+            marketCacheNew.Remove(exchange);
             marketCacheNew.Add(exchange, pairService.SortPairs(exchange, marketCacheRaw[exchange].result));
 
             logger.Log($"Got {marketCacheNew[exchange].AllPairs.Count} pairs in {char.ToUpper(exchange[0]) + exchange.Substring(1)} database.");
             logger.Log("Done.");
             logger.Log($"Comparing new {char.ToUpper(exchange[0]) + exchange.Substring(1)} data with old data...");
-
+            newPairsCache.Remove(exchange);
             newPairsCache.Add(exchange, pairService.Compare(exchange, marketCacheOld[exchange], marketCacheNew[exchange]));
 
             logger.Log($"Got {newPairsCache[exchange].AllPairs.Count} pairs in {char.ToUpper(exchange[0]) + exchange.Substring(1)} database : ");
@@ -151,24 +153,21 @@ namespace TerminalApe.UI
             logBox.SelectionStart = logBox.Text.Length;
             logBox.ScrollToCaret();
         }
+        #endregion
 
         #region UI Tray Icon Controls:
-
         private void TrayIcon_DoubleClick(object sender, MouseEventArgs e)
         {
             ShowFormAndHideTrayIcon();
         }
-
         private void TrayIconOpenMenu_Click(object sender, EventArgs e)
         {
             ShowFormAndHideTrayIcon();
         }
-
         private void TrayIconExitMenu_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void ShowFormAndHideTrayIcon()
         {
             this.Show();
@@ -177,6 +176,8 @@ namespace TerminalApe.UI
         }
 
         #endregion
+
+        #region UI Updating, events and actions
         private void UpdateSizeQuoteDropdown(object sender, EventArgs e)
         {
 
@@ -415,32 +416,135 @@ namespace TerminalApe.UI
             if (GridOrders.RowCount == 0) { ButtonRemoveorder.Enabled = false; }
             else { ButtonRemoveorder.Enabled = true; }
         }
-    }
-}
+        #endregion
 
-    /*
-    protected override void OnFormClosing(FormClosingEventArgs e)
-    {
-        // Handle form closing event to minimize to tray instead of closing
-        if (e.CloseReason == CloseReason.UserClosing)
+        #region UI Toolstrip Controls:
+        //
+        // TOOLSTRIP - FILE -> 
+        //
+        // Load Database
+        //
+        private void ToolstripFileLoadDatabase_Click(object sender, EventArgs e)
         {
-            e.Cancel = true;
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*",
+                FilterIndex = 1,
+                RestoreDirectory = true
+            };
 
-            DialogResult result = MessageBox.Show("Do you want to close application?", "Close or Minimize?", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            // Set the initial directory to the app folder
+            openFileDialog.InitialDirectory = appSettings.Directory;
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                Environment.Exit(0);
+                string filePath = openFileDialog.FileName;
+
+                marketCacheOld.Clear();
+
+                foreach (string exchange in appSettings.Exchanges)
+                {
+                    marketCacheOld.Add(exchange, fileDatabase.LoadExchangeCache(exchange, filePath));
+                    GetUpdate(exchange);
+                }                
             }
-            else if (result == DialogResult.No)
+        }
+        //
+        // Save Database (Binance, Bybit, Coinbase...)
+        //
+        private void ToolstripSaveExchangeCache_Click(object sender, EventArgs e)
+        {
+            string buttonName = (sender as ToolStripMenuItem)?.Text.Replace("ToolStripMenuItem", "").ToLower();
+            DialogResult answer = new DialogResult();
+
+            answer = MessageBox.Show($"Are you sure you want to overwrite { buttonName } cache on this system with currently collected data?", $"Save { buttonName } market cache", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (answer == DialogResult.Yes)
             {
-                this.WindowState = FormWindowState.Minimized;
+                if (buttonName == "all")
+                {
+                    fileDatabase.SaveCache(Path.Combine(appSettings.DatabaseDirectory, appSettings.DatabaseFile), marketCacheNew);
+                    marketCacheOld = marketCacheNew;
+                    newPairsCache.Clear();
+                    foreach (string exchange in appSettings.Exchanges)
+                    {
+                        GetUpdate(exchange);
+                    }
+                }
+                else
+                {
+                    marketCacheOld.Remove(buttonName);
+                    marketCacheOld[buttonName] = marketCacheNew[buttonName];
+                    newPairsCache.Remove(buttonName);
+
+                    fileDatabase.SaveCache(Path.Combine(appSettings.DatabaseDirectory, appSettings.DatabaseFile), marketCacheNew);
+
+                    GetUpdate(buttonName);
+                }
+            }
+        }
+        //
+        // Save As...
+        //
+        private void ToolstripSaveAs_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog openFileDialog = new SaveFileDialog
+            {
+                Filter = "JSON files (*.json)|*.json|All files (*.*)|*.*",
+                FilterIndex = 1,
+                RestoreDirectory = true,
+                OverwritePrompt = true,
+                InitialDirectory = appSettings.DatabaseDirectory
+            };
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+                fileDatabase.SaveCache(filePath, marketCacheNew);
+            }
+        }
+        //
+        // Minimize to tray
+        //
+        private void ToolstripMinimizeToTray_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+            AppTrayIcon.Visible = true;
+            this.Hide();
+        }
+        //
+        // Close
+        //
+        private void ToolstripClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        //
+        // TOOLSTRIP - SETTINGS ->
+        //
+        private void ToolstripSettings_Click(object sender, EventArgs e)
+        {
+            SettingsForm settingsForm = new SettingsForm();
+            settingsForm.ShowDialog();
+        }
+        //
+        // TOOLSTRIP - ABOUT ->
+        //
+        private void ToolstripAbout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Degen Ape v1.0\n" +
+                "Be Careful...", "About");
+        }
+        #endregion
+
+        private void MainAppForm_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                // Your custom code for minimizing goes here
                 AppTrayIcon.Visible = true;
                 this.Hide();
             }
-
         }
-
-        base.OnFormClosing(e);
     }
-    */
-
+}

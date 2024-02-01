@@ -381,6 +381,7 @@
             loadDatabaseToolStripMenuItem.Name = "loadDatabaseToolStripMenuItem";
             loadDatabaseToolStripMenuItem.Size = new Size(173, 22);
             loadDatabaseToolStripMenuItem.Text = "Load Database";
+            loadDatabaseToolStripMenuItem.Click += ToolstripFileLoadDatabase_Click;
             // 
             // toolStripSeparator3
             // 
@@ -399,18 +400,21 @@
             BinanceToolStripMenuItem.Name = "BinanceToolStripMenuItem";
             BinanceToolStripMenuItem.Size = new Size(133, 22);
             BinanceToolStripMenuItem.Text = "Binance";
+            BinanceToolStripMenuItem.Click += ToolstripSaveExchangeCache_Click;
             // 
             // BybitToolStripMenuItem
             // 
             BybitToolStripMenuItem.Name = "BybitToolStripMenuItem";
             BybitToolStripMenuItem.Size = new Size(133, 22);
             BybitToolStripMenuItem.Text = "Bybit";
+            BybitToolStripMenuItem.Click += ToolstripSaveExchangeCache_Click;
             // 
             // CoinbaseToolStripMenuItem
             // 
             CoinbaseToolStripMenuItem.Name = "CoinbaseToolStripMenuItem";
             CoinbaseToolStripMenuItem.Size = new Size(133, 22);
             CoinbaseToolStripMenuItem.Text = "Coinbase";
+            CoinbaseToolStripMenuItem.Click += ToolstripSaveExchangeCache_Click;
             // 
             // toolStripSeparator2
             // 
@@ -421,13 +425,15 @@
             // 
             SaveallToolStripMenuItem.Name = "SaveallToolStripMenuItem";
             SaveallToolStripMenuItem.Size = new Size(133, 22);
-            SaveallToolStripMenuItem.Text = "Save All";
+            SaveallToolStripMenuItem.Text = "All";
+            SaveallToolStripMenuItem.Click += ToolstripSaveExchangeCache_Click;
             // 
             // saveAsToolStripMenuItem
             // 
             saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             saveAsToolStripMenuItem.Size = new Size(173, 22);
             saveAsToolStripMenuItem.Text = "Save As";
+            saveAsToolStripMenuItem.Click += ToolstripSaveAs_Click;
             // 
             // toolStripSeparator1
             // 
@@ -445,6 +451,7 @@
             ToolstripFileClose.Name = "ToolstripFileClose";
             ToolstripFileClose.Size = new Size(173, 22);
             ToolstripFileClose.Text = "Close";
+            ToolstripFileClose.Click += ToolstripClose_Click;
             // 
             // viewToolStripMenuItem
             // 
@@ -475,12 +482,14 @@
             ToolstripSettings.Name = "ToolstripSettings";
             ToolstripSettings.Size = new Size(71, 20);
             ToolstripSettings.Text = "Settings";
+            ToolstripSettings.Click += ToolstripSettings_Click;
             // 
             // ToolstripAbout
             // 
             ToolstripAbout.Name = "ToolstripAbout";
             ToolstripAbout.Size = new Size(47, 20);
             ToolstripAbout.Text = "Help";
+            ToolstripAbout.Click += ToolstripAbout_Click;
             // 
             // panel12
             // 
@@ -3301,6 +3310,7 @@
             Name = "MainAppForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Terminal Ape v1.0";
+            Resize += MainAppForm_Resize;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             panel12.ResumeLayout(false);
