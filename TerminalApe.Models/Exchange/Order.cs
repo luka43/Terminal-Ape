@@ -1,31 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TerminalApe.Models.Exchange;
+
 public class Order
 {
+    private static Random random = new Random();
+
     public int ID { get; set; } = GenerateOrderID();
-    public string Base { set; get; }
-    public string Quote { set; get; }
-    public string Side { set; get; }
-    public string Type { set; get; }
-    public string Size { set; get; }
+    public string Base { get; set; }
+    public string Quote { get; set; }
+    public string Side { get; set; }
+    public string Type { get; set; }
+    public string Size { get; set; }
     public string SizeQuote { get; set; }
-    public string Stoploss { set; get; }
-    public string Takeprofit { set; get; }
-    public string Reenter { set; get; }
-    public string NumberOfExec { set; get; }
-    public List<string> Exchange { set; get; }
-    public long Timestamp { set; get; }
+    public string Stoploss { get; set; }
+    public string Takeprofit { get; set; }
+    public string Reenter { get; set; }
+    public string NumberOfExec { get; set; }
+    public List<string> Exchange { get; set; }
+    public long Timestamp { get; set; }
 
-    static int GenerateOrderID()
+    private static int GenerateOrderID()
     {
-        Random random = new Random();
-        int result = random.Next(100000, 1000000);
-
-        return result;
+        return random.Next(100000, 1000000);
     }
 }

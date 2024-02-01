@@ -8,7 +8,7 @@ public class Timers
 {
     private UpdateUi updateUi;
     private AppSettings appSettings;
-    private System.Windows.Forms.Timer connectionCheckTimer;
+    public System.Windows.Forms.Timer connectionCheckTimer {  get; set; }
 
     public Timers(MainAppForm form)
     {

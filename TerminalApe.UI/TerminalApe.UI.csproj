@@ -10,7 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\logodisabled.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="logodisabled.ico" />
+    <Content Include="Resources\logodisabled.ico" />
   </ItemGroup>
 
   <ItemGroup>

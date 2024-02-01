@@ -124,6 +124,9 @@
   <data name="apeenabledsmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\apeenabledsmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logodisabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\logodisabled.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="signal-empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\signal-empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

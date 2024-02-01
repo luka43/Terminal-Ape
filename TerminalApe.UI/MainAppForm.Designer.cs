@@ -722,6 +722,7 @@
             GridOrders.Size = new Size(1393, 305);
             GridOrders.StandardTab = true;
             GridOrders.TabIndex = 18;
+            GridOrders.RowStateChanged += GridOrdersChanged;
             // 
             // ID
             // 
@@ -858,6 +859,7 @@
             // ButtonRemoveorder
             // 
             ButtonRemoveorder.Dock = DockStyle.Left;
+            ButtonRemoveorder.Enabled = false;
             ButtonRemoveorder.Location = new Point(6, 5);
             ButtonRemoveorder.Margin = new Padding(2);
             ButtonRemoveorder.Name = "ButtonRemoveorder";
@@ -865,6 +867,7 @@
             ButtonRemoveorder.TabIndex = 20;
             ButtonRemoveorder.Text = "Remove order";
             ButtonRemoveorder.UseVisualStyleBackColor = true;
+            ButtonRemoveorder.Click += ButtonRemoveorder_Click;
             // 
             // panel2
             // 
@@ -927,11 +930,11 @@
             ButtonReset.TabIndex = 21;
             ButtonReset.Text = "Reset";
             ButtonReset.UseVisualStyleBackColor = true;
+            ButtonReset.Click += ButtonReset_Click;
             // 
             // ButtonAddOrder
             // 
             ButtonAddOrder.Dock = DockStyle.Right;
-            ButtonAddOrder.Enabled = false;
             ButtonAddOrder.Location = new Point(229, 0);
             ButtonAddOrder.Margin = new Padding(2);
             ButtonAddOrder.Name = "ButtonAddOrder";
@@ -939,6 +942,7 @@
             ButtonAddOrder.TabIndex = 20;
             ButtonAddOrder.Text = "Add Order";
             ButtonAddOrder.UseVisualStyleBackColor = true;
+            ButtonAddOrder.Click += AddOrder;
             // 
             // panel50
             // 
@@ -981,6 +985,7 @@
             CheckboxSelectAll.TabIndex = 18;
             CheckboxSelectAll.Text = "Select All";
             CheckboxSelectAll.UseVisualStyleBackColor = true;
+            CheckboxSelectAll.Click += CheckboxSelectAll_CheckedChanged;
             // 
             // panel48
             // 
@@ -1003,6 +1008,7 @@
             CheckboxFTX.TabIndex = 19;
             CheckboxFTX.Text = "FTX";
             CheckboxFTX.UseVisualStyleBackColor = true;
+            CheckboxFTX.Click += SelectorDeselectAllExchanges;
             // 
             // CheckboxKraken
             // 
@@ -1014,6 +1020,7 @@
             CheckboxKraken.TabIndex = 18;
             CheckboxKraken.Text = "Kraken";
             CheckboxKraken.UseVisualStyleBackColor = true;
+            CheckboxKraken.Click += SelectorDeselectAllExchanges;
             // 
             // CheckboxCoinbase
             // 
@@ -1025,6 +1032,7 @@
             CheckboxCoinbase.TabIndex = 17;
             CheckboxCoinbase.Text = "Coinbase";
             CheckboxCoinbase.UseVisualStyleBackColor = true;
+            CheckboxCoinbase.Click += SelectorDeselectAllExchanges;
             // 
             // panel47
             // 
@@ -1046,6 +1054,7 @@
             CheckboxBybit.TabIndex = 16;
             CheckboxBybit.Text = "Bybit";
             CheckboxBybit.UseVisualStyleBackColor = true;
+            CheckboxBybit.Click += SelectorDeselectAllExchanges;
             // 
             // CheckboxBitget
             // 
@@ -1057,6 +1066,7 @@
             CheckboxBitget.TabIndex = 15;
             CheckboxBitget.Text = "Bitget";
             CheckboxBitget.UseVisualStyleBackColor = true;
+            CheckboxBitget.Click += SelectorDeselectAllExchanges;
             // 
             // CheckboxBinance
             // 
@@ -1068,6 +1078,7 @@
             CheckboxBinance.TabIndex = 14;
             CheckboxBinance.Text = "Binance";
             CheckboxBinance.UseVisualStyleBackColor = true;
+            CheckboxBinance.Click += SelectorDeselectAllExchanges;
             // 
             // panel51
             // 
@@ -1167,6 +1178,7 @@
             BoxTakeprofit.Name = "BoxTakeprofit";
             BoxTakeprofit.Size = new Size(250, 21);
             BoxTakeprofit.TabIndex = 52;
+            BoxTakeprofit.Text = "0";
             // 
             // label68
             // 
@@ -1201,6 +1213,7 @@
             BoxStoploss.Name = "BoxStoploss";
             BoxStoploss.Size = new Size(250, 21);
             BoxStoploss.TabIndex = 52;
+            BoxStoploss.Text = "0";
             // 
             // label67
             // 
@@ -1232,7 +1245,6 @@
             DropdownSizeQuote.AllowDrop = true;
             DropdownSizeQuote.Dock = DockStyle.Left;
             DropdownSizeQuote.DropDownStyle = ComboBoxStyle.DropDownList;
-            DropdownSizeQuote.Enabled = false;
             DropdownSizeQuote.FormattingEnabled = true;
             DropdownSizeQuote.Location = new Point(235, 0);
             DropdownSizeQuote.Margin = new Padding(4, 3, 4, 3);
@@ -1257,12 +1269,12 @@
             // 
             BoxSize.BorderStyle = BorderStyle.FixedSingle;
             BoxSize.Dock = DockStyle.Left;
-            BoxSize.Enabled = false;
             BoxSize.Location = new Point(85, 0);
             BoxSize.Margin = new Padding(4, 3, 4, 3);
             BoxSize.Name = "BoxSize";
             BoxSize.Size = new Size(130, 21);
             BoxSize.TabIndex = 120;
+            BoxSize.Text = "0";
             // 
             // label60
             // 
@@ -1372,6 +1384,7 @@
             CheckBoxAnyBase.TabIndex = 54;
             CheckBoxAnyBase.Text = "Any base asset";
             CheckBoxAnyBase.UseVisualStyleBackColor = true;
+            CheckBoxAnyBase.CheckedChanged += CheckBoxAnyBase_CheckedChanged;
             // 
             // label56
             // 
@@ -1404,12 +1417,12 @@
             DropdownQuote.DropDownStyle = ComboBoxStyle.DropDownList;
             DropdownQuote.Enabled = false;
             DropdownQuote.FormattingEnabled = true;
-            DropdownQuote.Items.AddRange(new object[] { "ANY" });
             DropdownQuote.Location = new Point(235, 0);
             DropdownQuote.Margin = new Padding(4, 3, 4, 3);
             DropdownQuote.Name = "DropdownQuote";
             DropdownQuote.Size = new Size(100, 21);
             DropdownQuote.TabIndex = 57;
+            DropdownQuote.SelectedIndexChanged += UpdateSizeQuoteDropdown;
             // 
             // label46
             // 
@@ -1431,12 +1444,12 @@
             DropdownBase.DropDownStyle = ComboBoxStyle.DropDownList;
             DropdownBase.Enabled = false;
             DropdownBase.FormattingEnabled = true;
-            DropdownBase.Items.AddRange(new object[] { "ANY" });
             DropdownBase.Location = new Point(85, 0);
             DropdownBase.Margin = new Padding(4, 3, 4, 3);
             DropdownBase.Name = "DropdownBase";
             DropdownBase.Size = new Size(130, 21);
             DropdownBase.TabIndex = 55;
+            DropdownBase.SelectedIndexChanged += UpdateSizeQuoteDropdown;
             // 
             // label37
             // 
