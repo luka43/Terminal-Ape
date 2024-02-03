@@ -1,15 +1,9 @@
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using TerminalApe.DAL;
 using TerminalApe.Models.Configuration;
 using TerminalApe.Models.Exchange;
-using TerminalApe.Services.Connection;
 using TerminalApe.Services.Exchanges;
-using TerminalApe.UI.Properties;
 using TerminalApe.UI.Services;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace TerminalApe.UI
 {
@@ -23,7 +17,7 @@ namespace TerminalApe.UI
         private PairService pairService;
 
         private AppSettings appSettings;
-        private Dictionary<string, ExchangeSettings> exchangeSettings;
+        private Dictionary<string, IExchangeSettings> exchangeSettings;
 
         private Dictionary<string, dynamic> marketCacheRaw;
         private Dictionary<string, MarketCache> marketCacheOld;
@@ -81,12 +75,12 @@ namespace TerminalApe.UI
         {
             UpdateUi = new UpdateUi(this);
             fileDatabase = new FileDatabase();
-            pairService = new PairService();
+            pairService = new PairService(ExchangeSettings.Default());
         }
         private void InitializeSettings()
         {
             appSettings = new AppSettings().Default();
-            exchangeSettings = new ExchangeSettings().Default();
+            exchangeSettings = ExchangeSettings.Default();
         }
         private void InitializeMarketCache()
         {

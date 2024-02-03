@@ -1,9 +1,7 @@
 ﻿using TerminalApe.DAL;
 using TerminalApe.Models.Configuration;
 using TerminalApe.Models.Exchange;
-using TerminalApe.Services.Connection;
 using TerminalApe.Services.Exchanges;
-using TerminalApe.UI.Services;
 
 namespace TerminalApe.UI.Services;
 
@@ -14,7 +12,7 @@ public class Timers
     private UpdateUi updateUi;
 
     private AppSettings appSettings { get; set; } = new AppSettings().Default();
-    private Dictionary<string, ExchangeSettings> exchangeSettings { get; set; } = new ExchangeSettings().Default();
+    private Dictionary<string, IExchangeSettings> exchangeSettings { get; set; } = ExchangeSettings.Default();
     private MarketCache oldMarketCache { get; set; } = new MarketCache();
     private MarketCache newMarketCache { get; set; } = new MarketCache();
     private MarketCache newPairsCache { get; set; } = new MarketCache();

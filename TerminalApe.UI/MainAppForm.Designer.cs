@@ -737,6 +737,7 @@
             // 
             ID.FillWeight = 63.90181F;
             ID.HeaderText = "#";
+            ID.MinimumWidth = 8;
             ID.Name = "ID";
             ID.ReadOnly = true;
             // 
@@ -808,6 +809,7 @@
             // 
             ColumnExecutions.FillWeight = 98.17288F;
             ColumnExecutions.HeaderText = "Num. of Executions";
+            ColumnExecutions.MinimumWidth = 8;
             ColumnExecutions.Name = "ColumnExecutions";
             ColumnExecutions.ReadOnly = true;
             ColumnExecutions.SortMode = DataGridViewColumnSortMode.NotSortable;
@@ -816,6 +818,7 @@
             // 
             ReEnter.FillWeight = 83.75632F;
             ReEnter.HeaderText = "Re-Enter";
+            ReEnter.MinimumWidth = 8;
             ReEnter.Name = "ReEnter";
             ReEnter.ReadOnly = true;
             ReEnter.SortMode = DataGridViewColumnSortMode.NotSortable;
@@ -824,6 +827,7 @@
             // 
             ColumnExchanges.FillWeight = 119.4964F;
             ColumnExchanges.HeaderText = "Exchanges";
+            ColumnExchanges.MinimumWidth = 8;
             ColumnExchanges.Name = "ColumnExchanges";
             ColumnExchanges.ReadOnly = true;
             ColumnExchanges.SortMode = DataGridViewColumnSortMode.NotSortable;

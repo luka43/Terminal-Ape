@@ -1,11 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using TerminalApe.Models.Exchange;
 using TerminalApe.Models.Configuration;
 
@@ -13,7 +8,7 @@ namespace TerminalApe.Services.Exchanges;
 
 public class OrderService
 {
-    private ExchangeSettings exchangeSettings { get; } = new ExchangeSettings();
+    private IExchangeSettings exchangeSettings { get; } = new ExchangeSettings();
     
 
     public async Task<dynamic> Execute(string exchange, string secretKey, Order order)
@@ -40,10 +35,10 @@ public class OrderService
                 // Set the base URL for the Binance API
                 try
                 {
-                    client.BaseAddress = new Uri(exchangeSettings.Default()[exchange].APIUrlBase);
+                    client.BaseAddress = new Uri(ExchangeSettings.Default()[exchange].APIUrlBase);
 
                     // Add the API key and signature to the request headers
-                    client.DefaultRequestHeaders.Add(header, exchangeSettings.Default()[exchange].APIKey);
+                    client.DefaultRequestHeaders.Add(header, ExchangeSettings.Default()[exchange].APIKey);
                     queryString += $"&signature={signature}";
                 }
                 catch (Exception ex)
@@ -51,7 +46,7 @@ public class OrderService
                     Console.WriteLine($"({order}) Error: {ex.Message}");
                 }
                 // Send the POST request to create a market order
-                HttpResponseMessage response = await client.PostAsync($"{exchangeSettings.Default()[exchange].APIUrlOrder}?{queryString}", null);
+                HttpResponseMessage response = await client.PostAsync($"{ExchangeSettings.Default()[exchange].APIUrlOrder}?{queryString}", null);
 
                 // Read the response content
                 string jsonContent = await response.Content.ReadAsStringAsync();

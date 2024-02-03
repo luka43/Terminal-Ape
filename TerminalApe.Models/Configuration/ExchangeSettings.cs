@@ -1,15 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+﻿namespace TerminalApe.Models.Configuration;
 
-namespace TerminalApe.Models.Configuration;
-
-public class ExchangeSettings
+public interface IExchangeSettings
 {
+    string Name { get; }
+    string APIKey { get; set; }
+    string SECRETKey { get; set; }
+    int TIMEOUT { get; set; }
+    string APIUrlBase { get; set; }
+    string APIUrlPing { get; set; }
+    string APIUrlPairs { get; set; }
+    string APIUrlOrder { get; set; }
+}
 
+public class ExchangeSettings : IExchangeSettings
+{
+    public string Name { get; set; }
     public string APIKey { get; set; }
     public string SECRETKey { get; set; }
     public int TIMEOUT { get; set; }
@@ -18,10 +23,9 @@ public class ExchangeSettings
     public string APIUrlPairs { get; set; }
     public string APIUrlOrder { get; set; }
 
-
-    public Dictionary<string, ExchangeSettings> Default() 
+    public static Dictionary<string, IExchangeSettings> Default() 
     {
-        Dictionary<string, ExchangeSettings> result = new Dictionary<string, ExchangeSettings>()
+        Dictionary<string, IExchangeSettings> result = new Dictionary<string, IExchangeSettings>()
         {
             { "binance", new ExchangeSettings()
             {

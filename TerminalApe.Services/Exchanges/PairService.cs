@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
-using System.Dynamic;
+﻿using System.Dynamic;
 using TerminalApe.Models.Configuration;
 using TerminalApe.Models.Exchange;
 
@@ -7,8 +6,24 @@ namespace TerminalApe.Services.Exchanges;
 
 public class PairService
 {
-    private readonly HttpClient NetworkClient = new HttpClient();
-    public dynamic settings = new ExchangeSettings().Default();    
+    private readonly HttpClient networkClient;
+    private readonly Dictionary<string, IExchangeSettings>? exchangeSettings;    
+
+    public PairService()
+    {
+        this.networkClient = new HttpClient();
+        this.exchangeSettings = null;
+    }
+
+    public PairService(List<IExchangeSettings> settings) : this()
+    {
+        this.exchangeSettings = settings.ToDictionary(x => x.Name);
+    }
+
+    public PairService(Dictionary<string, IExchangeSettings> settings) : this()
+    {
+        this.exchangeSettings = settings;
+    }
 
     public async Task<dynamic> GetPairs(string exchange)
     {
@@ -16,8 +31,9 @@ public class PairService
         long timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
         try
         {
-            NetworkClient.DefaultRequestHeaders.Add("User-Agent", "DegenApe");
-            HttpResponseMessage response = await NetworkClient.GetAsync(settings[exchange].APIUrlBase + settings[exchange].APIUrlPairs);
+            var exchangeConfig = this.exchangeSettings![exchange];
+            networkClient.DefaultRequestHeaders.Add("User-Agent", "DegenApe");
+            HttpResponseMessage response = await networkClient.GetAsync(exchangeConfig.APIUrlBase + exchangeConfig.APIUrlPairs);
 
             if (response.IsSuccessStatusCode)
             {

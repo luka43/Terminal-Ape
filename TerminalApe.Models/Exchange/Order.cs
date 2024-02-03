@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace TerminalApe.Models.Exchange;
+﻿namespace TerminalApe.Models.Exchange;
 
 public class Order
 {
     private static Random random = new Random();
 
+    // GUID VALUE
+    public string OrderID { get; set; }
     public int ID { get; set; } = GenerateOrderID();
     public string Base { get; set; }
     public string Quote { get; set; }
@@ -23,6 +22,11 @@ public class Order
 
     private static int GenerateOrderID()
     {
-        return random.Next(100000, 1000000);
+        return random.Next(100000, 1000000);   
+    }
+
+    private string GenerateGuidOrderID()
+    {
+        return Guid.NewGuid().ToString();
     }
 }

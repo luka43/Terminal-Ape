@@ -8,7 +8,7 @@ using TerminalApe.Services.Exchanges;
 Logger logger = new Logger();
 
 AppSettings appSettings = new AppSettings().Default();
-PairService pairService = new PairService();
+PairService pairService = new PairService(ExchangeSettings.Default());
 
 Dictionary<string, dynamic> marketCacheRaw = new Dictionary<string, dynamic>();
 
